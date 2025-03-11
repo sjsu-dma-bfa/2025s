@@ -40,6 +40,26 @@ body, html {
     text-align: center;
   }
 
-  @media (screen) {
+  .info-section {
+    background-color: #3b2c46;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: white;
     
+  }
+
+  .fancy-text {
+    font-family: "Big Shoulders Inline", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 64;
+  }
+
+  @media (max-width: 600px) {
+
+    .bg-text {
+        width: 90%;
+    }
   }
