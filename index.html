@@ -1,39 +1,36 @@
 <html>
-<head>
-    <title>Digital Illusions</title>
-    <link rel="icon" type="image_/x-icon" href="images/sjsu_logo.png">
-    <link rel="stylesheet" href="css/general_css_code.css">
-    <link rel="stylesheet" href="css/home_page_code.css">    
-<style>
-</style>
-</head>
-<body>
-<!-- navigation bar ----------------------------------->
-<div class="navbar">
-    <a class="currentPage, left" href="index.html">Digital Illusions</a>
-    <a class="right" href="about_page.html">About</a>
-    <a class="right" href="catalogue_page.html">Catalogue</a>
-</div> <!-- navigation bar end ----------------------------------->
+    <head>
+        <title>Digital Illusions: Coming Soon!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image_/x-icon" href="images/sjsu_logo.png">
+        <link rel="stylesheet" href="css/general_css_code.css">
+        <link rel="stylesheet" href="css/comingSoon_style.css">
+        
+        <!-- Custom Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
 
 
-<img style="width: 100%; height:700px;" src="images/sjsu_logo.png">
-<!-- hero image end -->
+    </head>
+    <body>
+        <!-- bg-image is in css/comingSoon_style.css -->
+        <div class="bg-image"></div>
+        <img src="images/icons/down_arrow.png" alt="image" class="arrow-image">
 
-<!-- News Section ---------------------------------->
- <div class="news_section">
-  <h1>Coming soon to the Hammer theater</h1>
-  <br>
-  <p>date, 6-9pm</p>
- </div>
-<div class="artworks_section">
-  <h1>Exhibition Catalogue</h1>
-  <p>put some short description here</p>
-  <button><a href="catalogue_page.html">Catalogue</a></button>
-</div>
-<div class="about_section">
-  <h1>About Us</h1>
-  <p>description</p>
-  <button><a href="about_page.html">learn more</a></button>
-</div>
-</body>
+        <div class="bg-text">
+        <h1 class="fancy-text">Digital Illusions</h1>
+        <h2>Coming Soon...</h2>
+        <h2 id="timer"></h2>
+        <script src="js/countDown.js"></script>
+        </div>
+
+        <div class="info-section">
+            <h1>Info</h1>
+            <p>Hammer Theater</p>
+            <p2>Adress Here</p2>
+            <p><br> Time of the event plus something else</p>
+        </div>
+    </body>
+
 </html>

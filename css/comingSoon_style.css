@@ -6,6 +6,15 @@ body, html {
     box-sizing: border-box;
   }
   
+  .arrow-image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    width: 2.5%;
+    height: auto;
+  }
+
   .bg-image {
     /* The image used */
     background-image: url("../images/BackgroundImages/Medium_Background.jpg");
@@ -57,9 +66,12 @@ body, html {
     font-size: 64;
   }
 
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
 
     .bg-text {
         width: 90%;
+    }
+    .arrow-image{
+        width: 10%;
     }
   }
