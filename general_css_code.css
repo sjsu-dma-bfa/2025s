@@ -1,0 +1,43 @@
+.navbar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .navbar a {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+    border: rgba(1,1,1,0.2);
+    border: 1px;
+  }
+  .navbar:hover{
+    background-color: rgba(0,0,0,0.2);
+  }
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+  .navbar a:hover{
+    text-decoration-thickness: 5px;
+  }
+  /* navbar end------------------- */
+  body {
+    margin:0;
+    background-color: black;
+  }
+  h1{
+    color: white;
+  }
+  p{
+    color: white;
+  }
+  a{
+    text-decoration: none;
+  }
