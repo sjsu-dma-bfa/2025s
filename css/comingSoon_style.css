@@ -68,6 +68,9 @@ body, html {
 
   @media screen and (max-width: 600px) {
 
+    .bg-image{
+        background-image: url(../images/BackgroundImages/Phone_Background.jpg);
+    }
     .bg-text {
         width: 90%;
     }
