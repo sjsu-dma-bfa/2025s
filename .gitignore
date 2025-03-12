@@ -1,6 +1,6 @@
 # This .gitignore file should be placed at the root of the project directory
 
-
+ 
 # General Mac OS
 .DS_Store
 .AppleDouble
