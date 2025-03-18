@@ -1,0 +1,14 @@
+{
+   "Artist": [
+        {
+            "name": "Test Name 1",
+            "statement": "helloWorld",
+            "image": "light-mascot-1.png"
+        },
+        {
+            "name": "Test Name 2",
+            "statement": "byeWorld",
+            "image": "sjsu_logo.png"
+        }
+    ]
+}
