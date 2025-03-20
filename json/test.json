@@ -1,14 +1,14 @@
 {
    "Artist": [
         {
-            "name": "Test Name 1",
-            "statement": "helloWorld",
+            "name": "Joe The Namer",
+            "statement": "The crazy world of creating an artist statement will never cease to amaze me ",
             "image": "light-mascot-1.png"
         },
         {
-            "name": "Test Name 2",
-            "statement": "byeWorld",
-            "image": "sjsu_logo.png"
+            "name": "Glitchy Name",
+            "statement": "an Artist statement should fill multiple lines and I'm Sure that it will in due time. \"the idea\"",
+            "image": "BackgroundImages/Medium_Background.jpg"
         }
     ]
 }

@@ -49,10 +49,24 @@ function updatePage(data){
         
         const newImage = new Image()
         newImage.src = imgFile;
-        newImage.style.width = "50%";
+        newImage.classList.add("artwork");
         document.getElementById("artwork").appendChild(newImage);
         
-        
+        newImage.onload = function() {
+            const width = newImage.naturalWidth;
+            const height = newImage.naturalHeight;
+
+            if (height >= width) {
+                console.log('The image is Tall or Square.');
+                newImage.style.height = "90vh";
+                newImage.style.width = "auto";
+            } 
+            else {
+                console.log('The image is Wide');
+                newImage.style.height = "auto";
+                newImage.style.width = "60vw";
+            }
+        }
 
     }
     

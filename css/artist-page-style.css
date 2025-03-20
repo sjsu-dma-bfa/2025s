@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #3b2c46;
+
+}
+
+.container {
+    margin: 50px;
+    padding: 0 20px;
+    display: grid;
+    flex-direction: column; /* Aligns items in a vertical column */
+    align-items: center; /* Optional: aligns items horizontally in the center */
+    justify-content: center; /* Optional: aligns items vertically in the center */
+
+}
+
+.column {
+    flex: 2 1 60%; /* Grow, shrink, and set a base size for the columns */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid yellow;
+}
+
+.column-2 {
+    display: grid;
+    justify-content: center;
+    flex: 1 1 30%; /* Second column takes up less space (1 part out of 3) */
+    border: 1px solid yellowgreen;
+}
+
+.column-2 img {
+    width: auto;
+    height: 250px;
+}
+
+.item {
+    width: 60vw;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid yellow;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    border: 1px solid yellow;
+    padding: 10px;
+}
+/* picture documentation */
+
+.artwork {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 60vw;
+    border: 1px solid yellow;
+}
+
+/* video documentation */
+
+
+/* game documentation */
+
+
+.artist_statement{
+    width: 100%;
+}
+
+.artsist_bio{
+    width: 100%;
+}
+.bg-image {
+    /* Center and scale the image nicely */
+    background-image: url("../images/BackgroundImages/Medium_Background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Add the blur effect */
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+
+    /* The image used */
+    position: absolute;
+    top: 0;
+    top: 0;
+    left: 0;
+    height: 50vh; /* Full viewport height */
+    width: 100%;
+
+    z-index: -1;
+  }
+
+  @media (max-width: 768px) {
+    .column, .column-2, .item {
+        flex: 1 1 100%; /* Stack columns on smaller screens */
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        width: 80vw;
+        text-align: center;
+    }
+    .column-2 img {
+        width: auto;
+        height: 125px;
+    }
+
+    .artwork{
+        width: 80vw;
+        height: auto;
+    }
+}
