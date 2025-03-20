@@ -34,21 +34,20 @@
 
   .show {display: block;}
 
-
-  * {
-    box-sizing: border-box;
-  }
   
   /* Container for flexboxes */
   .row {
     display: flex;
     flex-wrap: wrap;
+    
   }
   
   /* Create four equal columns */
   .column {
     flex: 25%;
     padding: 20px;
+    box-sizing: border-box;
+
   }
   
   /* On screens that are 992px wide or less, go from four columns to two columns */
