@@ -1,0 +1,56 @@
+/* picture documentation */
+
+
+/* video documentation */
+
+
+/* game documentation */
+
+
+.artist_statement{
+    width: 100%;
+}
+
+.artist_bio{
+    width: 100%;
+    height: auto;
+}
+.artist_bio img{
+    float: left;
+    width: 30%;
+}
+.artist_bio h2{
+    float: left;
+}
+.text_box{
+    float: left;
+    width: 70%;
+}
+
+.links_to_porfolio_and_other{
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+
+.artist_links {
+    text-align: center;
+    color: white;
+  }
+  
+  .artist_links button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    background-color: #555;
+    
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .artist_links button:hover {
+    background-color: #ddd;
+    color: black;
+  }
