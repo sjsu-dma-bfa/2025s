@@ -5,7 +5,6 @@
       <link rel="stylesheet" href="css/general_css_code.css">
       <link rel="stylesheet" href="css/home_page_code.css">
       <link rel="stylesheet" href="css/artist-page-style.css">
-      <script src="js/ArtistPageFiller.js"></script>
       
    
   </head>
@@ -31,17 +30,20 @@
             <h2 id="name" style="color: white">Artist Name</h2>
             <p>Artist quirp here</p>
             <div class="buttons">
-
+              <!-- Add Social Media Links Here (In Js) -->
             </div>
+            
           </div>
         </div>
         <div class="column-2">
           <img id="profile_pic" src="images/sjsu_logo.png">
         </div>
+
       </div>
 
-      
+      <br><br>
       <div class="item">
+
         <div class="artwork" id="artwork"></div>
       </div>
       
@@ -64,12 +66,13 @@
         </div>
       </div>  
       <footer>
-        <button><img src="images/icons/left_arrow.png" style="width: 5vw; height: auto;"></button>
+        <button id="left"><img src="images/icons/left_arrow.png" style="width: 5vw; height: auto;"></button>
         <button><a href="catalogue_page.html">Return To catalogue</a></button>
-        <button><img src="images/icons/right_arrow.png"style="width: 5vw; height: auto;"></button>
+        <button id="right"><img src="images/icons/right_arrow.png"style="width: 5vw; height: auto;"></button>
       </footer>
     </div>
-  </body>
+      <script src="js/ArtistPageFiller.js"></script>
+    </body>
 
 
 

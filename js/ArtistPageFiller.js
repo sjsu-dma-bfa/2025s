@@ -5,6 +5,36 @@
 var artist = "test";
 var index = 0;
 
+// Get a reference to the button
+const leftButton = document.getElementById("left");
+const rightButton = document.getElementById("right");
+
+// Add an event handler for the click event
+leftButton.addEventListener("click", function () {
+    index -= 1;
+    
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Adds smooth scrolling effect
+    });
+    setTimeout(function() {
+        fetchPeopleData();
+    }, 1000);
+});
+rightButton.addEventListener("click", function () {
+    index += 1; 
+    
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Adds smooth scrolling effect
+    });
+    setTimeout(function() {
+        fetchPeopleData();
+    }, 1000);
+})
+
+
+
 
 
 const params = new URLSearchParams(window.location.search);
@@ -31,8 +61,21 @@ function fetchPeopleData(){
 }
 
 function updatePage(data){
+
+    if(index >= data.Artist.length){
+        index = 0;
+    }
+    else if(index < 0){
+        index = data.Artist.length-1;
+    }
+
+    if(document.getElementById("artImage") !== null && document.getElementById("artImage").id !== ""){
+            
+        newImage = document.getElementById("artImage").remove();
+    }
+
     document.getElementById('name').innerHTML = data.Artist[index].name;
-    console.log(data.Artist[index].statement);
+    //console.log(data.Artist[index].statement);
     document.getElementById('bio').innerHTML = data.Artist[index].statement;
 
     const imgFile = "../images/" + String(data.Artist[index].image);
@@ -42,15 +85,17 @@ function updatePage(data){
 
     if(imgFile.toLocaleLowerCase().endsWith('.png') || imgFile.toLocaleLowerCase().endsWith('.jpg') || imgFile.toLocaleLowerCase().endsWith('.jpeg') ){
         
-        // const newImage = new Image()
-        // newImage.scr = "../images/light-mascot-1.png"
-        // newImage.style.width = "50%";
-        // document.getElementById("artwork").appendChild(newImage);
-        
+
+
+
+    
         const newImage = new Image()
         newImage.src = imgFile;
         newImage.classList.add("artwork");
+        newImage.id = "artImage"
         document.getElementById("artwork").appendChild(newImage);
+    
+
         
         newImage.onload = function() {
             const width = newImage.naturalWidth;
@@ -58,13 +103,11 @@ function updatePage(data){
 
             if (height >= width) {
                 console.log('The image is Tall or Square.');
-                newImage.style.height = "90vh";
-                newImage.style.width = "auto";
+                newImage.classList.add("tall");
             } 
             else {
                 console.log('The image is Wide');
-                newImage.style.height = "auto";
-                newImage.style.width = "60vw";
+                newImage.classList.add("wide");
             }
         }
 
