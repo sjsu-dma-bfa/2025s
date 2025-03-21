@@ -1,5 +1,16 @@
-/* picture documentation */
+.artwork_display{
+    width: 100%;
+    float: left;
+}
 
+/* picture documentation */
+.artwork_display img{
+    width: 50%;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
 
 /* video documentation */
 
