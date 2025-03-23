@@ -1,5 +1,5 @@
   body{
-    background-color: #110d1d;
+    background-color: #07030e;
   }
   .container{
     display: grid;
@@ -7,9 +7,14 @@
     padding: 0px 100px 0px 100px;
     gap: 20px;
   }
+
+  .container2{
+    display: grid;
+    grid-template-columns: 1fr; /* 1 */
+
+  }
   .box {
-    padding: 10px;
-    background-color: #3b2c46;
+    padding: 20px;
   }
 
   .dropbtn {
