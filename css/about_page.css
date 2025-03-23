@@ -1,4 +1,18 @@
-.dropbtn {
+  body{
+    background-color: #110d1d;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 1:2 ratio */
+    padding: 0px 100px 0px 100px;
+    gap: 20px;
+  }
+  .box {
+    padding: 10px;
+    background-color: #3b2c46;
+  }
+
+  .dropbtn {
     background-color: #3498DB;
     color: white;
     /* padding: 16px; */
