@@ -74,12 +74,22 @@ function updatePage(data){
         newImage = document.getElementById("artImage").remove();
     }
 
-    document.getElementById('name').innerHTML = data.Artist[index].name;
-    //console.log(data.Artist[index].statement);
-    document.getElementById('bio').innerHTML = data.Artist[index].statement;
+    // Project Title
+    document.getElementById('title').innerHTML = data.Artist[index].title;
 
-    const imgFile = "../images/" + String(data.Artist[index].image);
-    console.log(imgFile);
+    // Artist Name
+    document.getElementById('name').innerHTML = data.Artist[index].name;
+
+    document.getElementById('profile_pic').src = "../images/" + data.Artist[index].profilePicture;
+
+    // Artist Statement
+    document.getElementById('statement').innerHTML = data.Artist[index].statement;
+
+    // Artist Biography
+    document.getElementById('bio').innerHTML = data.Artist[index].biography;
+
+    // Artist Project Display
+    const imgFile = "../images/" + String(data.Artist[index].display);
 
     //document.getElementById("artkwork").innerHTML += '<img src="/images/light-mascot-1.png" alt="testing">';
 

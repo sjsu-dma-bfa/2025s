@@ -4,8 +4,10 @@ body {
     display: flex;
     justify-content: center; /* Horizontally center the content */
     height: 100vh; /* Full height of the viewport */
-    background-color: #3b2c46;
-
+    background-color: #07030e;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .container {
@@ -20,14 +22,14 @@ body {
 
 .column {
     flex: 2 1 60%; /* Grow, shrink, and set a base size for the columns */
-    padding: 20px;
+    
     box-sizing: border-box;
     /* border: 1px solid yellow; */
 }
 
 .column-2 {
     display: grid;
-    justify-content: center;
+    justify-content: right;
     flex: 1 1 30%; /* Second column takes up less space (1 part out of 3) */
     /* border: 1px solid yellowgreen; */
 }
@@ -35,12 +37,15 @@ body {
 .column-2 img {
     width: auto;
     height: 250px;
+    display: flex;
+    justify-content: center;
 }
 
 .item {
     width: 60vw;
     padding: 10px;
     display: flex;
+    justify-content: left;
     flex-wrap: wrap;
     /* border: 1px solid yellow; */
 }
@@ -48,13 +53,21 @@ body {
 footer {
     bottom: 0;
     left: 0;
-    display: flex;
-    justify-content: center;
     /* border: 1px solid yellow; */
     padding: 10px;
+    max-height: 50px;
+    display: flex;
+    justify-content: center;
 }
-/* picture documentation */
 
+button img {
+    all: unset;
+    cursor: pointer;
+}
+
+
+
+/* picture documentation */
 .artwork {
     display: grid;
     justify-content: center;
@@ -65,15 +78,13 @@ footer {
 }
 
 .artwork .wide {
-    width: 60vw;
+    width: 70vw;
     height: auto;
-    border: 5px solid #211a27;
 }
 .artwork .tall {
-    height: 90vh;
+    height: auto;
     width: auto;
-    border: 5px solid #211a27;
-
+    max-height: 80vh;
 }
 /* video documentation */
 
@@ -103,13 +114,13 @@ footer {
     top: 0;
     top: 0;
     left: 0;
-    height: 50vh; /* Full viewport height */
+    height: 20vh; 
     width: 100%;
 
     z-index: -1;
   }
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .column, .column-2, .item {
         flex: 1 1 100%; /* Stack columns on smaller screens */
         justify-content: center;
@@ -131,4 +142,8 @@ footer {
         width: 80vw;
         height: auto;
     }
+}
+
+@media (orientation: portrait) {
+
 }
