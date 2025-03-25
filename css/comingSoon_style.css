@@ -41,7 +41,7 @@ body, html {
     
   }
   .socialIcons img {
-    height: 32px;
+    height: 50px;
     width: auto;
     margin: 10px;
   }
@@ -92,5 +92,9 @@ body, html {
     }
     .arrow-image{
         width: 10%;
+    }
+    .socialIcons img {
+      height: 40px;
+      width: auto;
     }
   }
