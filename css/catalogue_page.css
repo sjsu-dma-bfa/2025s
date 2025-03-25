@@ -46,7 +46,7 @@ button {
     font-weight: 800;
 }
 
-li button:hover{
+button:hover{
   background-color: rgb(10, 3, 96);
 }
 form{

@@ -20,6 +20,34 @@ body {
 
 }
 
+.buttons button {
+    /* display: block; */
+    max-height: 50px;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: none;
+    margin: 5px;
+    background-color: #7D36B3;
+    font-weight: 800;
+}
+
+.buttons a {
+    color: white;
+}
+
+.buttons img {
+    height: 100%;
+    width: auto;
+    max-width: 50px;
+}
+
+.buttons button:hover{
+    background-color: #00C0E6;
+} 
+
 .column {
     flex: 2 1 60%; /* Grow, shrink, and set a base size for the columns */
     
@@ -39,6 +67,7 @@ body {
     height: 250px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .item {
@@ -60,12 +89,9 @@ footer {
     display: flex;
     justify-content: space-between;
     
+    
 }
 
-button img {
-    all: unset;
-    cursor: pointer;
-}
 
 
 

@@ -6,7 +6,7 @@ function filterCatalog(searchInput) {
     // console.log(searchInputTest.toLowerCase() + " | " + searchInput);
     
     catalogItems.forEach(item => {
-        console.log(item.getAttribute('data-tags'));
+        // console.log(item.getAttribute('data-tags'));
         const tags = item.getAttribute('data-tags').toLowerCase();
         if (tags.includes(searchInput)) {
             item.style.display = 'block';
