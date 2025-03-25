@@ -99,7 +99,7 @@ footer {
 
 /* picture documentation */
 .artwork {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
