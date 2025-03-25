@@ -178,6 +178,24 @@ footer {
     }
 }
 
-@media (orientation: portrait) {
+@media screen and (orientation: portrait) {
+    .artwork .wide {
+        width: 80vw;
+        height: auto;
+    }
+    .artwork .tall {
+        width: 80vw;
+        height: auto;
+    }
+}
 
+@media screen and (orientation: landscape) {
+    .artwork .wide {
+        width: 60vw;
+        height: auto;
+    }
+    .artwork .tall {
+        width: auto;
+        height: 80vw;
+    }
 }
