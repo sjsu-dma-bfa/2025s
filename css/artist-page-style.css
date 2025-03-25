@@ -8,6 +8,7 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size:  1rem;
 }
 
 .container {
@@ -142,13 +143,18 @@ footer {
     top: 0;
     top: 0;
     left: 0;
-    height: 20vh; 
+    height: 30vh; 
     width: 100%;
 
     z-index: -1;
   }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 856px) {
+
+    /* body{
+        font-size: 2rem;
+    } */
+
     .column, .column-2, .item {
         flex: 1 1 100%; /* Stack columns on smaller screens */
         justify-content: center;
@@ -157,9 +163,9 @@ footer {
         width: 80vw;
         text-align: center;
     }
-    .column-2 img {
-        width: auto;
-        height: 125px;
+
+    .bg-image {
+        height: 50vh;
     }
 
     .artwork .wide {

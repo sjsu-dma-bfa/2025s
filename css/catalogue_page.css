@@ -82,7 +82,7 @@ form{
 
 /* catalogue container  ---------start-----*/
   .row {
-    
+    margin: 20px;
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
@@ -100,7 +100,7 @@ form{
     float: left;
     vertical-align: middle;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .individual_artwork_display {
     flex: 50%;
     max-width: 50%;
