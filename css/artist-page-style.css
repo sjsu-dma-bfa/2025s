@@ -59,6 +59,7 @@ body {
 .column-2 {
     display: grid;
     justify-content: right;
+    align-items: center;
     flex: 1 1 30%; /* Second column takes up less space (1 part out of 3) */
     /* border: 1px solid yellowgreen; */
 }
