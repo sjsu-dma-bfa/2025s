@@ -4,7 +4,7 @@
   .container{
     display: grid;
     grid-template-columns: 1fr 2fr; /* 1:2 ratio */
-    padding: 75px 20% 0px 20%;
+    padding: 75px 15% 0px 15%;
     gap: 20px;
   }
 
@@ -91,7 +91,7 @@
     background-attachment: fixed;
     /* Add the blur effect */
     filter: blur(1px);
-    -webkit-filter: blur(1px);
+    -webkit-filter: blur(15x);
 
     /* The image used */
     position: absolute;
