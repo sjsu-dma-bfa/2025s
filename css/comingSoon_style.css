@@ -38,19 +38,6 @@ body, html {
   
 
 
-  .socialIcons {
-    margin: 20px;
-    
-  }
-  .socialIcons img {
-    height: 64px;
-    width: auto;
-    padding: 10px;
-  }
-
-  .socialIcons img:hover{
-    padding: 5px;
-  }
 
   /* Position text in the middle of the page/image */
   .bg-text {
@@ -106,9 +93,5 @@ body, html {
     .arrow-image{
         width: 10%;
     }
-    .socialIcons img {
-      height: 72px;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
+
   }

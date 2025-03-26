@@ -1,3 +1,13 @@
+/* 
+Background: #07030e
+Blue: #00C0E6
+Purple: #7D36B3
+Green: #00CC63z  
+*/
+
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -108,7 +118,7 @@ footer {
 }
 
 .artwork .wide {
-    width: 70vw;
+    width: 60vw;
     height: auto;
 }
 .artwork .tall {
@@ -179,24 +189,3 @@ footer {
     }
 }
 
-@media screen and (orientation: portrait) {
-    .artwork .wide {
-        width: 80vw;
-        height: auto;
-    }
-    .artwork .tall {
-        width: 80vw;
-        height: auto;
-    }
-}
-
-@media screen and (orientation: landscape) {
-    .artwork .wide {
-        width: 60vw;
-        height: auto;
-    }
-    .artwork .tall {
-        width: auto;
-        height: 80vw;
-    }
-}

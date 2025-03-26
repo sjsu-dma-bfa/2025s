@@ -42,3 +42,28 @@
   a{
     text-decoration: none;
   }
+
+
+  
+  .socialIcons {
+    margin: 20px;
+    height: 70px;
+    display: block;
+    align-items: center;
+  }
+  .socialIcons img {
+    height: 64px;
+    width: auto;
+    padding: 10px;
+  }
+
+  .socialIcons img:hover{
+    padding: 5px;
+  }
+  @media screen and (max-width: 600px) {
+    .socialIcons img {
+      height: 72px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
