@@ -1,78 +1,105 @@
 <html>
-  <head>
-      <title>artist name</title>
-      <link rel="icon" type="image_/x-icon" href="images/sjsu_logo.png">
-      <link rel="stylesheet" href="css/general_css_code.css">
-      <link rel="stylesheet" href="css/home_page_code.css">
-      <link rel="stylesheet" href="css/artist-page-style.css">
-      
-   
-  </head>
 
-  <body>
-    <div class="bg-image"></div>
-      
-    <div class="navbar">  <!-- navigation bar --------------------------------------->
-      <a class="currentPage, left" href="index.html">Digital Illusions</a>
-      <a class="right" href="about_page.html">About</a>
-      <a class="right" href="catalogue_page.html">Catalogue</a>
-    </div>   
+<head>
+  <title>Artist Page - Dietrich Steinberg</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image_/x-icon" href="../images/sjsu_logo.png">
+  <link rel="stylesheet" href="../css/general_css_code.css">
+  <link rel="stylesheet" href="../css/home_page_code.css">
+  <link rel="stylesheet" href="../css/artist-page-style.css">
 
-          <!-- navigation bar end ----------------------------------->
+     <!-- Custom Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+     <!-- End of Custom Fonts -->
 
-    <div class="container">
 
-      <div class="item" style="background-color: rgba(0, 0, 0, 0.5);">
-        <div class="column">
-          <div class="artist_statement">
-            <h1 id="title">Title Name</h1>
-            <hr>
-            <h2 id="name" style="color: white">Artist Name</h2>
-            <p>Artist quirp here</p>
-            <div class="buttons">
-              <!-- Add Social Media Links Here (In Js) -->
-            </div>
-            
+
+</head>
+
+<body>
+  <div class="bg-image"></div>
+
+  <div class="navbar"> <!-- navigation bar --------------------------------------->
+    <a class="currentPage, left" href="../index.html">Digital Illusions</a>
+    <a class="right" href="../about_page.html">About</a>
+    <a class="right" href="../catalogue_page.html">Catalogue</a>
+  </div>
+
+  <!-- navigation bar end ----------------------------------->
+
+  <div class="container">
+
+    <div class="item" style="background-color: rgba(0, 0, 0, 0.5);">
+      <div class="column">
+        <div class="artist_statement">
+          <h1 id="title">Metal Rain</h1>
+          <hr>
+          <h2 id="name" style="color: white">Dietrich Steinberg</h2>
+          <div class="buttons">
+            <!-- Add Social Media Links Here (In Js) -->
+            <a target="_blank" href="https://dietrichsteinberg.github.io"><button> Portfolio </button></a>
+            <a target="_blank" href="https://www.youtube.com/@dietrichAnimationPortfolio"><button>Youtube Channel</button></a>
           </div>
-        </div>
-        <div class="column-2">
-          <img id="profile_pic" src="images/sjsu_logo.png">
-        </div>
+          <div class="socialIcons">
+            <a target="_blank" href=""><img src="../images/icons/icon-logo-bluesky.png" style="padding: 10px; height: 54px;"></a>
+          </div>
 
+        </div>
       </div>
 
-      <br><br>
-      <div class="item">
 
-        <div class="artwork" id="artwork"></div>
-      </div>
-      
-      
-
-      <div class="item">  
-        <div class="artsist_bio">
-          <h1>Artist Statement</h1>
-          <hr>
-          <p id="bio">description</p>
-          <!-- <button><a >learn more</a></button> -->
-        </div>
-      </div>  
-      <div class="item">  
-        <div class="artsist_bio">
-          <h1>Artist Biography</h1>
-          <hr>
-          <p id="bio">description</p>
-          <!-- <button><a >learn more</a></button> -->
-        </div>
-      </div>  
-      <footer>
-        <button id="left"><img src="images/icons/left_arrow.png" style="width: 5vw; height: auto;"></button>
-        <button><a href="catalogue_page.html">Return To catalogue</a></button>
-        <button id="right"><img src="images/icons/right_arrow.png"style="width: 5vw; height: auto;"></button>
-      </footer>
     </div>
-      <script src="js/ArtistPageFiller.js"></script>
-    </body>
+
+    <br><br>
+    <div class="item">
+
+      <div class="artwork">
+        <img id="artwork" src="images/ExhibitionImages/Hannah1.png">
+      </div>
+      <div class="buttons" style="width: 60vw; " >
+        <a target="_blank" href="https://fiction-hans.itch.io/whimsical-flavors?secret=F16NgLtUrKKxCD9vcJKv6JYO7oY"><button style="width: 100%; margin: 0px; margin-top: 5px;"> Play on Steam </button></a>
+      </div>
+    </div>
+
+
+
+    <div class="item">
+      <div class="artsist_bio">
+        <h1>Artist Statement</h1>
+        <hr>
+        <p id="statement">The project is a 3d animated VR short film using Unity’s VR engine.
+          The film features my fan fiction War Hammer 40k Regiment.
+          My motivation for this project is to expand my skillset with Blender 4.0 and learn the basics of Virtual Reality.
+          My intention for the project is to communicate a visceral experience of situations in war where the people fighting aren’t in control of their own survival.
+          I want to communicate this experience, because I feel that people who haven’t been in war tend to have a naive main character perception of themselves when they imagine themselves in a war.
+          As such, I wanted to capitalize on this main character perception through VR to challenge the naive aspect of this perception. </p>
+        <!-- <button><a >learn more</a></button> -->
+      </div>
+    </div>
+    <div class="item">
+      <div class="column">
+        <h1>Artist Biography</h1>
+        <hr>
+        <p id="bio">Dietrich Steinberg is a Digital Media Artist. As a Digital Media Artist, his art primarily focuses on 2D, 3D graphics, and videos. 
+          His current work takes inspiration from meme culture, environmental politics, current events, or pure entertainment. His work pertains to these subjects because they are relevant to his lived experience of growing up with access to the internet, being a military brat, and having outdoor hobbies.
+          These lived experiences have guided him to embrace the absurdity of the internet, be skeptical of military action, and prioritize preserving nature. 
+        </p>
+        <!-- <button><a >learn more</a></button> -->
+      </div>
+      <div class="column-2">
+        <img id="profile_pic" src="images/Artist_Profile_Pics/Hannah.jpg">
+      </div>
+    </div>
+    <footer class="buttons">
+      <button id="left"><img src="../images/icons/left_arrow.png"></button>
+      <a href="../catalogue_page.html"><button>Return To catalogue</button></a>
+      <button id="right"><img src="../images/icons/right_arrow.png"></button>
+    </footer>
+  </div>
+  <script src="../js/ArtistPageFiller.js"></script>
+</body>
 
 
 
