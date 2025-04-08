@@ -1,11 +1,24 @@
+/* 
+Background: #07030e
+Blue: #00C0E6
+Purple: #7D36B3
+Green: #00CC63z  
+*/
+
+
+
+
 body {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center; /* Horizontally center the content */
     height: 100vh; /* Full height of the viewport */
-    background-color: #3b2c46;
-
+    background-color: #07030e;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:  1rem;
 }
 
 .container {
@@ -18,16 +31,45 @@ body {
 
 }
 
+.buttons button {
+    /* display: block; */
+    max-height: 50px;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: none;
+    margin: 5px;
+    background-color: #7D36B3;
+    font-weight: 800;
+}
+
+.buttons a {
+    color: white;
+}
+
+.buttons img {
+    height: 100%;
+    width: auto;
+    max-width: 50px;
+}
+
+.buttons button:hover{
+    background-color: #00C0E6;
+} 
+
 .column {
     flex: 2 1 60%; /* Grow, shrink, and set a base size for the columns */
-    padding: 20px;
+    
     box-sizing: border-box;
     /* border: 1px solid yellow; */
 }
 
 .column-2 {
     display: grid;
-    justify-content: center;
+    justify-content: right;
+    align-items: center;
     flex: 1 1 30%; /* Second column takes up less space (1 part out of 3) */
     /* border: 1px solid yellowgreen; */
 }
@@ -35,12 +77,16 @@ body {
 .column-2 img {
     width: auto;
     height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item {
     width: 60vw;
     padding: 10px;
     display: flex;
+    justify-content: left;
     flex-wrap: wrap;
     /* border: 1px solid yellow; */
 }
@@ -48,15 +94,22 @@ body {
 footer {
     bottom: 0;
     left: 0;
-    display: flex;
-    justify-content: center;
     /* border: 1px solid yellow; */
-    padding: 10px;
+    
+    padding-top: 5vh;
+    max-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+    
 }
-/* picture documentation */
 
+
+
+
+/* picture documentation */
 .artwork {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
@@ -67,13 +120,11 @@ footer {
 .artwork .wide {
     width: 60vw;
     height: auto;
-    border: 5px solid #211a27;
 }
 .artwork .tall {
-    height: 90vh;
+    height: auto;
     width: auto;
-    border: 5px solid #211a27;
-
+    max-height: 80vh;
 }
 /* video documentation */
 
@@ -103,13 +154,18 @@ footer {
     top: 0;
     top: 0;
     left: 0;
-    height: 50vh; /* Full viewport height */
+    height: 30vh; 
     width: 100%;
 
     z-index: -1;
   }
 
-  @media (max-width: 768px) {
+@media screen and (max-width: 856px) {
+
+    /* body{
+        font-size: 2rem;
+    } */
+
     .column, .column-2, .item {
         flex: 1 1 100%; /* Stack columns on smaller screens */
         justify-content: center;
@@ -118,9 +174,9 @@ footer {
         width: 80vw;
         text-align: center;
     }
-    .column-2 img {
-        width: auto;
-        height: 125px;
+
+    .bg-image {
+        height: 50vh;
     }
 
     .artwork .wide {
@@ -132,3 +188,4 @@ footer {
         height: auto;
     }
 }
+

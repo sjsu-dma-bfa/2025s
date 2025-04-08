@@ -1,83 +1,55 @@
 <html>
 <head>
     <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image_/x-icon" href="images/light-mascot-1.png">
     <link rel="stylesheet" href="css/general_css_code.css">
     <link rel="stylesheet" href="css/about_page.css">    
-<style>
-</style>
+        <!-- Custom Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+        <!-- End of Custom Fonts -->
 </head>
 <body>
 <!-- navigation bar ----------------------------------->
 <div class="navbar">
+  
   <img class="nav_logo, left" src="images/light-mascot-1.png" style="width: 40px; padding: 10px 0px 10px 16px;">
     <a class="currentPage, left" href="home_page.html">Digital Illusions</a>
     <a class="right" href="about_page.html">About</a>
     <a class="right" href="catalogue_page.html">Catalogue</a>
 </div> <!-- navigation bar end ----------------------------------->
-<br>
+<div class="bg-image"></div>
 
-<img class="left" src="images/light-mascot-1.png" style="width: 30%;">
-<!-- News Section ---------------------------------->
- <div style="width: 70%; height: 400px;" class="news_section, left">
-  <h1>Coming soon to the Hammer theater</h1>
-  <br>
-  <p>date, 6-9pm</p>
- </div>
-
-
-
-
-
- <br>
-<div class="dropdown, left" id="web_design_team">
-  <button onclick="myFunction()" class="dropbtn"><h2>Meet the Web design Team<h2></button>
-  <div id="myDropdown" class="dropdown-content">
-    <div class="row">
-      <div class="column" style="background-color:#aaa;">
-        <h2>Dietrich Steinberg</h2>
-        <p>Some text..</p>
-      </div>
-      
-      <div class="column" style="background-color:#bbb;">
-        <h2>Ben Beary</h2>
-        <p>Some text..</p>
-      </div>
-      
-      <div class="column" style="background-color:#ccc;">
-        <h2>Alisha Karma</h2>
-        <p>Some text..</p>
-      </div>
-      
-      <div class="column" style="background-color:#ddd;">
-        <h2>Derek</h2>
-        <p>Some text..</p>
-      </div>
-    </div>
+<div class="container container2">
+  <div class="box">
+    <h1 style="padding-top: 50px; text-align: center;">Coming soon to the Hammer theater</h1>
   </div>
 </div>
+<div class="container">
+<img class="box box2" src="images/light-mascot-1.png" style="width: 100%;">
 
 
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+<!-- News Section ---------------------------------->
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+ <div class="box box1">
+  <br>
+  <h1>About</h1>
+  <p>Digital Illusions presents an array of interdisciplinary works at the intersection of art and technology, blending creativity and digital tools to produce innovative works. This exhibition features a variety of digital media art including interactive installations, experimental video that pushes the boundaries of visual and narrative storytelling, game design that defies traditional mechanics and player experiences, and even expressive animation that brings narratives to life. The exhibition explores technology and pushes the limits of creative expression in the digital age.</p>
+  <p>The title Digital Illusions can be used to describe works that create immersive experiences through technology. Digital illusions shape perception by using technology to alter or enhance reality. By blending the digital world and reality, Digital Illusions can create surreal or realistic experiences. </p>
+  <p>The various works showcased in this exhibition reflects the diverse practices and technical fluency cultivated within the Digital Media Art program. Each piece offers a compelling view of how today’s emerging artists shape contemporary digital culture. Through the fusion of art and technology, Digital Illusions offers a glimpse of the future of creative expression.</p>
+
+
+</div>
+</div>
+<div class="container container2">
+  <div class="box">
+      <h1>Where and When?</h1>
+    <p>San Jose University, Art Building, Hammer Theater</p>
+    <p>101 Paseo de San Antonio, San Jose, CA 95113</p>
+    <p>April 26th, 2025, 6-9pm.</p>
+  </div>
+</div>
 </body>
 </html>

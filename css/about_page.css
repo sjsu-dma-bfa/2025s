@@ -1,20 +1,49 @@
-.dropbtn {
+  body{
+    background-color: #07030e;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 1:2 ratio */
+    padding: 75px 15% 0px 15%;
+    gap: 20px;
+  }
+
+  .container2{
+    display: grid;
+    grid-template-columns: 1fr; /* 1 */
+
+  }
+  .box {
+    padding: 20px;
+  }
+
+  .dropbtn {
     background-color: #3498DB;
     color: white;
+    /* padding: 16px; */
     font-size: 16px;
     border: none;
     cursor: pointer;
+    width: 100%;
   }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
   .dropdown {
     position: relative;
     display: inline-block;
+    width: 100%;
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
+    background-color: #f1f1f1;
     min-width: 160px;
     overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
@@ -52,4 +81,25 @@
     .row {
       flex-direction: column;
     }
+  }
+
+  .bg-image {
+    /* Center and scale the image nicely */
+    background-image: url("../images/BackgroundImages/Medium_Background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Add the blur effect */
+    filter: blur(1px);
+    -webkit-filter: blur(15x);
+
+    /* The image used */
+    position: absolute;
+    top: 0;
+    top: 0;
+    left: 0;
+    height: 30vh; 
+    width: 100%;
+
+    z-index: -1;
   }

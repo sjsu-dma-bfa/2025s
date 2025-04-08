@@ -1,5 +1,9 @@
 body, html {
     height: 100%;
+    font-family: "Sofia sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
   }
   
   * {
@@ -32,6 +36,9 @@ body, html {
     background-size: cover;
   }
   
+
+
+
   /* Position text in the middle of the page/image */
   .bg-text {
     background-color: rgb(0,0,0); /* Fallback color */
@@ -66,6 +73,13 @@ body, html {
     font-size: 64;
   }
 
+  a {
+    color: #00C0E6;
+  }
+
+  a:hover {
+    color: #00CC63;
+  }
 
   
   @media screen and (max-width: 600px) {
@@ -79,4 +93,5 @@ body, html {
     .arrow-image{
         width: 10%;
     }
+
   }
