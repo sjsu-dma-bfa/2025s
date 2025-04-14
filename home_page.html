@@ -11,7 +11,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
     <!-- End of Custom Fonts -->
+     
 <style>
+  button {
+    /* display: block; */
+    max-height: 50px;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: none;
+    margin: 5px;
+    background-color: #7D36B3;
+    font-weight: 800;
+}
+
+buttons a {
+    color: white;
+}
+
+button:hover{
+    background-color: #00C0E6;
+}
 </style>
 </head>
 <body>
@@ -28,20 +50,20 @@
 <!-- hero image end -->
 
 <!-- News Section ---------------------------------->
- <div class="news_section">
-  <h1>Coming soon to the Hammer theater</h1>
-  <br>
-  <p>date, 6-9pm</p>
+ <div class="news_section" style="text-align: center;">
+  <h1 style="margin-top: 50px;">Coming soon to the Hammer theater</h1>
+  <p style="margin-top: 20px;" >April 26, 6-9pm</p>
  </div>
-<div class="artworks_section">
-  <h1>Exhibition Catalogue</h1>
-  <p>put some short description here</p>
-  <button><a href="catalogue_page.html">Catalogue</a></button>
+<div class="artworks_section" style="width: 80%; margin-left: 10%;">
+  <h1>Our Exhibition</h1>
+  <p>Digital Illusions is a student and staff lead exhibition that showcases student pieces that challenge people's perception of art and technology. This showcases art pieces that challenge perceptions and blurs reality. This exhibition invites people to see the power of digital art and how vast and evolving the world of digital art.</p>
+  <a style="float: right;" href="catalogue_page.html"><button>Explore</button></a>
 </div>
-<div class="about_section">
+<br>
+<div class="about_section" style="width: 80%; margin-left: 10%;">
   <h1>About Us</h1>
   <p>description</p>
-  <button><a href="about_page.html">learn more</a></button>
+  <a href="about_page.html" style="float: right;"><button class="button">learn more</button></a>
 </div>
 </body>
 </html>
