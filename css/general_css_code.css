@@ -1,8 +1,28 @@
-html {
-  font-family: "Sofia sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+/* -------------------------------- */
+/* General Stuff  */
+/* -------------------------------- */
+  html {
+    font-family: "Sofia sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body {
+    margin:0;
+    background-color: black;
+  }
+  h1{
+    color: white;
+  }
+  p{
+    color: white;
+  }
+  a{
+    text-decoration: none;
+  }
+/* -------------------------------- */
+/* NavBar Stuff */
+/* -------------------------------- */
 .navbar {
     margin: 0;
     padding: 0;
@@ -12,7 +32,7 @@ html {
   }
   
   .navbar a {
-    font-size: 25px;
+    font-size: 1.5rem;
     color: white;
     text-align: center;
     padding: 16px 20px;
@@ -33,28 +53,51 @@ html {
   .navbar a:hover{
     text-decoration-thickness: 5px;
   }
-  /* navbar end------------------- */
-  body {
-    margin:0;
-    background-color: black;
-  }
-  h1{
-    color: white;
-  }
-  p{
-    color: white;
-  }
-  a{
-    text-decoration: none;
+
+/* -------------------------------- */
+/* img Expansion Stuff  */
+/* -------------------------------- */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
   }
 
+  /* Modal content (the image) */
+  .modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  }
 
-  
+  /* Close button */
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+/* -------------------------------- */
+/* Social Media Button Stuff */
+/* -------------------------------- */
   .socialIcons {
     margin: 20px;
     height: 70px;
+    width: auto;
     display: block;
     align-items: center;
+    justify-content: center;
   }
   .socialIcons img {
     height: 64px;
@@ -65,10 +108,17 @@ html {
   .socialIcons img:hover{
     padding: 5px;
   }
+
+
+
   @media screen and (max-width: 600px) {
     .socialIcons img {
       height: 72px;
       margin-left: 10px;
       margin-right: 10px;
+    }
+    .navbar a{
+      font-size: 1rem;
+      font-weight: 600;
     }
   }
