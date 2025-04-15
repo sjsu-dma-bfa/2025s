@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image_/x-icon" href="images/sjsu_logo.png">
   <link rel="stylesheet" href="css/general_css_code.css">
-  <link rel="stylesheet" href="css/home_page_code.css">
+
   <link rel="stylesheet" href="css/artist-page-style.css">
 
      <!-- Custom Fonts -->
@@ -21,13 +21,18 @@
 <body>
   <div class="bg-image"></div>
 
-  <div class="navbar"> <!-- navigation bar --------------------------------------->
+  <!-- navigation bar --------------------------------------->
+  <div class="navbar"> 
     <a class="currentPage, left" href="index.html">Digital Illusions</a>
     <a class="right" href="about_page.html">About</a>
     <a class="right" href="catalogue_page.html">Catalogue</a>
   </div>
-
-  <!-- navigation bar end ----------------------------------->
+  
+  <!-- Modal Component --------------------------------------->
+  <div class="modal" id="imageModal">
+    <span class="close" id="closeModal">&times;</span>
+    <img class="modal-content" id="modalImg" src="">
+  </div>
 
   <div class="container">
 
@@ -43,20 +48,17 @@
             <a target="_blank" href="https://fiction-hans.itch.io/whimsical-flavors?secret=F16NgLtUrKKxCD9vcJKv6JYO7oY"><button> Play on Itch.io </button></a>
           </div>
           <div class="socialIcons">
-            <a target="_blank" href="https://bsky.app/profile/annviatrix.bsky.social/post/3llcdb2rkn22l"><img src="images/icons/icon-logo-bluesky.png" style="padding: 10px; height: 54px;"></a>
+            <a target="_blank" href="https://bsky.app/profile/annviatrix.bsky.social/post/3llcdb2rkn22l"><img src="images/icons/icon-logo-bluesky.png"></a>
           </div>
-
         </div>
       </div>
-
-
     </div>
 
     <br><br>
     <div class="item">
 
       <div class="artwork">
-        <img id="artwork" src="images/ExhibitionImages/Hannah1.png">
+        <img id="artwork" class="wide" src="images/ExhibitionImages/Hannah1.png">
       </div>
       <div class="buttons" style="width: 60vw; " >
         <a target="_blank" href="https://fiction-hans.itch.io/whimsical-flavors?secret=F16NgLtUrKKxCD9vcJKv6JYO7oY"><button style="width: 100%; margin: 0px; margin-top: 5px;"> Play on Itch.io </button></a>
@@ -90,16 +92,17 @@
         <!-- <button><a >learn more</a></button> -->
       </div>
       <div class="column-2">
-        <img id="profile_pic" src="images/Artist_Profile_Pics/Hannah.jpg">
+        <img id="profile_pic" class="tall" src="images/Artist_Profile_Pics/Hannah.jpg">
       </div>
     </div>
     <footer class="buttons">
       <button id="left"><img src="images/icons/left_arrow.png"></button>
-      <a href="catalogue_page.html"><button>Return To catalogue</button></a>
+      <a href="catalogue_page.html"><button style="height: 100%;">Return To Catalogue</button></a>
       <button id="right"><img src="images/icons/right_arrow.png"></button>
     </footer>
   </div>
   <script src="js/ArtistPageFiller.js"></script>
+  
 </body>
 
 
