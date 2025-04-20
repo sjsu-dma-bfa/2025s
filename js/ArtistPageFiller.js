@@ -34,7 +34,7 @@ rightButton.addEventListener("click", function () {
 const modal = document.getElementById("imageModal"); // the container
 const modalImg = document.getElementById("modalImg"); // the display Image
 const closeBtn = document.getElementById("closeModal"); // a button to close container
-const thumbnails = document.querySelectorAll(".modal-image"); // all images allowed to be in modal
+const thumbnails = document.querySelectorAll(".wide, .tall"); // all images allowed to be in modal
 
 // Code for adding selected image to modal
 thumbnails.forEach(img => {

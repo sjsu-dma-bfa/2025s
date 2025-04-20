@@ -19,6 +19,7 @@
 </head>
 
 <body>
+  <div class="bg-image"></div>
 
   <!-- navigation bar --------------------------------------->
   <div class="navbar"> 
@@ -33,37 +34,33 @@
     <img class="modal-content" id="modalImg" src="">
   </div>
 
-  <!-- Artist Title & Info Panel ----------------------------->
-  <div class="bg-wrapper">
-    <div class="bg-image"></div>
+  <div class="container">
+
     <div class="item" style="background-color: rgba(0, 0, 0, 0.5);">
       <div class="column">
         <div class="artist_statement">
           <h1 id="title">Whimsical Flavors</h1>
           <hr>
-          <h3 id="name" style="color: white">Created By: <strong>Hannah</strong></h3>
+          <h2 id="name" style="color: white">Hannah</h2>
           <div class="buttons">
-            <!-- Add Social Media Links Here -->
+            <!-- Add Social Media Links Here (In Js) -->
             <a target="_blank" href="https://fictionalspace.github.io/Portfolio/index.html"><button> Portfolio </button></a>
             <a target="_blank" href="https://fiction-hans.itch.io/whimsical-flavors?secret=F16NgLtUrKKxCD9vcJKv6JYO7oY"><button> Play on Itch.io </button></a>
           </div>
-          <div class="socialIcons" style="margin: 20px 0;">
+          <div class="socialIcons">
             <a target="_blank" href="https://bsky.app/profile/annviatrix.bsky.social/post/3llcdb2rkn22l"><img src="images/icons/icon-logo-bluesky.png"></a>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-
-  <div class="container">
-
+    <br><br>
     <div class="item">
 
       <div class="artwork">
-        <img id="artwork" class="modal-image" src="images/ExhibitionImages/Hannah1.png">
+        <img id="artwork" class="wide" src="images/ExhibitionImages/Hannah1.png">
       </div>
-      <div class="buttons">
+      <div class="buttons" style="width: 60vw; " >
         <a target="_blank" href="https://fiction-hans.itch.io/whimsical-flavors?secret=F16NgLtUrKKxCD9vcJKv6JYO7oY"><button style="width: 100%; margin: 0px; margin-top: 5px;"> Play on Itch.io </button></a>
       </div>
     </div>
@@ -86,7 +83,7 @@
     <div class="item">
       <div class="column">
         <h1>Artist Biography</h1>
-        <hr style="width: 100%;">
+        <hr>
         <p id="bio">California based artist, Hannah Fu, has been tuning her skills in the path of digital media art.
           Transitioning from traditional sketchy drawings and bringing them to life in the digital world in the form of
           illustrations, gifs, and games. Taking inspiration from lurking in pop culture to drifting around places.
@@ -95,29 +92,13 @@
         <!-- <button><a >learn more</a></button> -->
       </div>
       <div class="column-2">
-        <img id="profile_pic" class="modal-image" src="images/Artist_Profile_Pics/Hannah.jpg">
+        <img id="profile_pic" class="tall" src="images/Artist_Profile_Pics/Hannah.jpg">
       </div>
     </div>
-    <div class="item">
-      <div class="artsist_bio">
-        <h1>More Images</h1>
-        <hr>
-      </div>
-      <div class="extra-images">
-        <img class="modal-image" src="images/BackgroundImages/Large_Background.jpg">
-        <img class="modal-image" src="images/catalog_Thumbnails/Sejeong_Park_thumbnail.jpg">
-        <img class="modal-image" src="images/ExhibitionImages/Hannah1.png">
-        <img class="modal-image" src="images/sjsu_logo.png">
-        <img class="modal-image" src="images/sjsu_logo.png">
-        <img class="modal-image" src="images/sjsu_logo.png">
-      </div>
-    </div>
-
-
     <footer class="buttons">
-      <a href="individual_Artworks_Pages/clarenceHoang.html"><button id="left"><img src="images/icons/left_arrow.png"></button></a>
+      <button id="left"><img src="images/icons/left_arrow.png"></button>
       <a href="catalogue_page.html"><button style="height: 100%;">Return To Catalogue</button></a>
-      <a href="individual_Artworks_Pages/clarenceHoang.html"><button id="right"><img src="images/icons/right_arrow.png"></button></a>
+      <button id="right"><img src="images/icons/right_arrow.png"></button>
     </footer>
   </div>
   <script src="js/ArtistPageFiller.js"></script>
