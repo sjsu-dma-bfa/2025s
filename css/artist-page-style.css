@@ -223,7 +223,7 @@ footer {
     }
 
     .extra-images {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
       }
 
     .artwork .modal-image {
@@ -233,3 +233,8 @@ footer {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .extra-images {
+      grid-template-columns: 1fr;
+    }
+  }
