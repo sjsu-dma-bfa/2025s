@@ -13,43 +13,35 @@
     grid-template-columns: 1fr; /* 1 */
 
   }
+  .container3{
+    display: flex;
+    flex-wrap: wrap; /* allows items to wrap to the next row */
+    gap: 10px 20px; /* spacing between items */
+    justify-content: center; /* centers items horizontally */
+    padding: 0px 15% 0px 15%;
+
+
+  }
+  .container3 > div {
+    flex: 0 0 18%; /* each item takes about 48% of container width */
+    box-sizing: border-box;
+    justify-content: center; /* centers items horizontally */
+    border: 1px solid white; /* border around box */
+    padding: 20px; /* increase padding here */
+    background-color: #141416;
+
+  }
+
   .box {
     padding: 20px;
   }
 
-  .dropbtn {
-    background-color: #3498DB;
+  h2{
     color: white;
-    /* padding: 16px; */
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
+    font-size: medium;
+    text-align: ;
   }
-  
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    display: block;
-  }
+
 
   .show {display: block;}
 
@@ -118,6 +110,13 @@
       width: 100%;
       padding: 10px 0;
     }
+
+    .container3 > div {
+      flex: 0 0 100%; /* each item takes about 48% of container width */
+      box-sizing: border-box;
+      justify-content: center; /* centers items horizontally */
+    }
   
+  }
 
   
