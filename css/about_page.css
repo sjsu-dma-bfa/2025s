@@ -39,7 +39,6 @@
   h2{
     color: white;
     font-size: medium;
-    text-align: ;
   }
 
 
@@ -112,9 +111,9 @@
     }
 
     .container3 > div {
-      flex: 0 0 100%; /* each item takes about 48% of container width */
+      flex: 0 0 100%; 
       box-sizing: border-box;
-      justify-content: center; /* centers items horizontally */
+      justify-content: center; 
     }
   
   }
