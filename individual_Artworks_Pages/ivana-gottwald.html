@@ -1,0 +1,142 @@
+<html>
+
+<head>
+  <title>Artist Page - Hannah</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image_/x-icon" href="../images/sjsu_logo.png">
+  <link rel="stylesheet" href="../css/general_css_code.css">
+
+  <link rel="stylesheet" href="../css/artist-page-style.css">
+
+  <!-- Custom Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+    rel="stylesheet">
+  <!-- End of Custom Fonts -->
+
+
+
+</head>
+
+<body>
+
+  <!-- navigation bar --------------------------------------->
+  <div class="navbar">
+    <a class="currentPage, left" href="../index.html">Digital Illusions</a>
+    <a class="right" href="../about_page.html">About</a>
+    <a class="right" href="../catalogue_page.html">Catalogue</a>
+  </div>
+
+  <!-- Modal Component --------------------------------------->
+  <div class="modal" id="imageModal">
+    <span class="close" id="closeModal">&times;</span>
+    <img class="modal-content" id="modalImg" src="">
+  </div>
+
+  <!-- Artist Title & Info Panel ----------------------------->
+  <div class="bg-wrapper">
+    <div class="bg-image"></div>
+    <div class="item" style="background-color: rgba(0, 0, 0, 0.5);">
+      <div class="column">
+        <div class="artist_statement">
+          <h1 id="title">Love Me, Therefore _______ Me.</h1>
+          <hr>
+          <h3 id="name" style="color: white">Created By: <strong>Ivana Grace-Lou Gottwald (she/her)</strong></h3>
+          <div class="buttons">
+            <!-- Add Portfolio Links and Video / game link -->
+            <!-- <a target="_blank" href="https://fictionalspace.github.io/Portfolio/index.html"><button> Portfolio </button></a> -->
+            <!-- <a target="_blank" href="https://fiction-hans.itch.io/whimsical-flavors?secret=F16NgLtUrKKxCD9vcJKv6JYO7oY"><button> Play on Itch.io </button></a> -->
+          </div>
+          <div class="socialIcons" style="margin: 20px 0;">
+            <!-- Add Social Media Links Here -->
+            <!-- <a target="_blank" href="https://bsky.app/profile/annviatrix.bsky.social/post/3llcdb2rkn22l"><img src="../images/icons/icon-logo-bluesky.png"></a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="item">
+
+      <div class="artwork">
+        <!-- Main Art Piece (Put Embbed Youtube Link Here) -->
+        <img id="artwork" class="modal-image" src="images/exhibition_images/Clarence_Hoang_work.jpg">
+      </div>
+      <!-- Only Have this if the Artwork is a game -->
+      <div class="buttons">
+        <a target="_blank"
+          href="https://fiction-hans.itch.io/whimsical-flavors?secret=F16NgLtUrKKxCD9vcJKv6JYO7oY"><button
+            style="width: 100%; margin: 0px; margin-top: 5px;"> Play on Itch.io </button></a>
+      </div>
+    </div>
+
+
+
+    <div class="item">
+      <div class="artsist_bio">
+        <h1>Artist Statement</h1>
+        <hr>
+        <p id="statement"><strong style="color: red;">Love Me, Therefore ______ Me.</strong> is a visual and auditory exploration of love at its most
+          intoxicating and ruinous state. Through expressive sketches and poetic sequencing, this motion graphic novel
+          reflects the self-sacrificial nature of “love” and the paradox of deep emotional entanglement, where two
+          people are drawn together through a magnetic, undeniable, and destructive bond; Highs are euphoric, moments
+          where seems the universe has designed a connection with divine precision, yet, lows are catastrophic spirals
+          of shame, turmoil, and regret, where faith in humanity and oneself is questioned. The viewer is left in the
+          aftermath, sitting with the finality of love's implosion. The video is not just a depiction of a toxic
+          relationship, but an immersive confrontation with it. It demands that the viewer feel what it means to be
+          consumed and to long for something that hurts.
+
+          As if the brain cannot outrule the heart, there is an odd sense of purpose when chasing unrequited love. If
+          love is the force that affirms existence—"I love, therefore I am in love"—then to sever that bond is to
+          question the very nature of truth. If I no longer love you, then the person who loved you has ceased to exist
+          entirely. So, who am I now and what does all of this make me? Now that I am not desired, am I merely an empty,
+          rotten carcass? Was I ever meant to survive? Is love the art of feeding or the art of fasting? When you
+          consumed me, did you taste my suffering?<strong style="color: red;"> If you love me, then what else can you do to me?</strong></p>
+        <!-- <button><a >learn more</a></button> -->
+      </div>
+    </div>
+    <div class="item">
+      <div class="column">
+        <h1>Artist Biography</h1>
+        <hr style="width: 100%;">
+        <p id="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec justo et massa interdum
+          ornare in porta purus. Quisque viverra odio at convallis ornare. Sed mattis eu ligula vitae blandit. Cras eget
+          quam facilisis, tincidunt arcu sit amet, vestibulum elit. Ut dictum ex lacus, sed hendrerit lectus
+          pellentesque sit amet. Maecenas iaculis commodo dolor vitae egestas. Duis congue nisi et enim vehicula
+          iaculis. Vestibulum pellentesque commodo augue eu consectetur. Morbi vestibulum mauris dolor. Proin vel
+          efficitur neque, quis vulputate ante.</p>
+      </div>
+      <div class="column-2" style="padding: 10px;">
+        <!-- Put Profile Picture here -->
+        <img id="profile_pic" class="modal-image" src="images/profile_picture/Clarence_Hoang.jpg">
+      </div>
+    </div>
+    <div class="item">
+      <div class="artsist_bio">
+        <h1>More Images</h1>
+        <hr>
+      </div>
+      <div class="extra-images">
+        <img class="modal-image" src="../images/sjsu_logo.png">
+        <img class="modal-image" src="../images/sjsu_logo.png">
+      </div>
+    </div>
+
+
+    <footer class="buttons">
+      <a href="blankTemplate.html"><button id="left"><img src="../images/icons/left_arrow.png"></button></a>
+      <a href="../catalogue_page.html"><button style="height: 100%;">Return To Catalogue</button></a>
+      <a href="blankTemplate.html"><button id="right"><img src="../images/icons/right_arrow.png"></button></a>
+    </footer>
+  </div>
+  <script src="../js/ArtistPageFiller.js"></script>
+
+</body>
+
+
+
+</html>
