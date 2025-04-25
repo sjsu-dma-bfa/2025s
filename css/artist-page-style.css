@@ -126,6 +126,9 @@ footer {
 
     /* border: 1px solid yellow; */
 }
+.artwork iframe {
+    width:  100%;
+}
 
 .artwork .modal-image {
     max-width: 60vw;
@@ -231,6 +234,7 @@ footer {
         max-width: 80vw;
         max-height: 80vh;
     }
+
 }
 
 @media screen and (max-width: 480px) {
