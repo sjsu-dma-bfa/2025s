@@ -126,13 +126,16 @@ footer {
 
     /* border: 1px solid yellow; */
 }
-.artwork iframe {
+.artwork iframe, .artwork img {
     width:  100%;
 }
 
-.artwork .modal-image {
+.artwork img, .modal-image img {
     max-width: 60vw;
     max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
 
 .extra-images {
@@ -219,10 +222,11 @@ footer {
     .buttons {
         width: 80vw
     }
-
-
     .artwork {
-        display: block;
+        display: flex;
+        width: 100%;
+        max-width: 80vw;
+        max-height: 80vh;
     }
 
     .extra-images {
@@ -235,10 +239,24 @@ footer {
         max-height: 80vh;
     }
 
+    .modal-image img, .modal-image iframe {
+        width: 100%;
+        height: auto;
+        max-width: 80vw;
+        max-height: 80vh;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
     .extra-images {
       grid-template-columns: 1fr;
     }
+    .modal-image img {
+        width: 100%;
+        height: auto;
+        max-width: 80vw;
+        max-height: 80vh;
+    }
+    
   }
