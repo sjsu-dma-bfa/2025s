@@ -1,0 +1,131 @@
+<html>
+
+<head>
+  <title>Artist Page - Clarence Hoang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image_/x-icon" href="../images/sjsu_logo.png">
+  <link rel="stylesheet" href="../css/general_css_code.css">
+
+  <link rel="stylesheet" href="../css/artist-page-style.css">
+
+  <!-- Custom Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+    rel="stylesheet">
+  <!-- End of Custom Fonts -->
+
+
+
+</head>
+
+<body>
+
+  <!-- navigation bar --------------------------------------->
+  <div class="navbar">
+    <a class="currentPage, left" href="../index.html">Digital Illusions</a>
+    <a class="right" href="../about_page.html">About</a>
+    <a class="right" href="../catalogue_page.html">Catalogue</a>
+  </div>
+
+  <!-- Modal Component --------------------------------------->
+  <div class="modal" id="imageModal">
+    <span class="close" id="closeModal">&times;</span>
+    <img class="modal-content" id="modalImg" src="">
+  </div>
+
+  <!-- Artist Title & Info Panel ----------------------------->
+  <div class="bg-wrapper">
+    <div class="bg-image"></div>
+    <div class="item" style="background-color: rgba(0, 0, 0, 0.5);">
+      <div class="column">
+        <div class="artist_statement">
+          <h1 id="title">The Final Piece</h1>
+          <hr>
+          <h3 id="name" style="color: white">Created By: <strong>Clarence Hoang (he/him)</strong></h3>
+          <div class="buttons">
+            <!-- Add Portfolio Links and Video / game link -->
+            <a target="_blank" href="https://clarencehoang.myportfolio.com/work"><button> Portfolio </button></a>
+            <!-- <a target="_blank" href="https://fiction-hans.itch.io/whimsical-flavors?secret=F16NgLtUrKKxCD9vcJKv6JYO7oY"><button> Play on Itch.io </button></a> -->
+          </div>
+          <div class="socialIcons" style="margin: 20px 0;">
+            <!-- Add Social Media Links Here -->
+            <a target="_blank" href="https://www.instagram.com/clarencehoang/"><img src="../images/icons/icon-logo-instagram.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="item">
+
+      <div class="artwork">
+        <!-- Main Art Piece (Put Embbed Youtube Link Here) -->
+        <img id="artwork" class="modal-image" src="images/exhibition_images/Clarence_Hoang_work.jpg">
+      </div>
+      <!-- Only Have this if the Artwork is a game -->
+      <!-- <div class="buttons">
+        <a target="_blank"
+          href="https://fiction-hans.itch.io/whimsical-flavors?secret=F16NgLtUrKKxCD9vcJKv6JYO7oY"><button style="width: 100%; margin: 0px; margin-top: 5px;"> Play on Itch.io </button></a>
+      </div> -->
+    </div>
+
+
+
+    <div class="item">
+      <div class="artsist_bio">
+        <h1>Artist Statement</h1>
+        <hr>
+        <p id="statement">"The Final Piece", a short 3D animation, initially became a technical challenge of whether I
+          was able to recreate scenes and visuals from real life. Inspired by scenery such as ocean windmills, basalt
+          columns in Alaska, and the sun hitting the surface of the ocean while being underwater. I explore the thought
+          of “How much do you love someone or something, and how much are you willing to sacrifice for them?”
+          Additionally, the film subtly reflects on humanity's future. Our impact on Earth, the potential rise of
+          sentient artificial intelligence, and the possibility of a world where only the robots we created remain.</p>
+        <!-- <button><a >learn more</a></button> -->
+      </div>
+    </div>
+    <div class="item">
+      <div class="column">
+        <h1>Artist Biography</h1>
+        <hr style="width: 100%;">
+        <p id="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec justo et massa interdum
+          ornare in porta purus. Quisque viverra odio at convallis ornare. Sed mattis eu ligula vitae blandit. Cras eget
+          quam facilisis, tincidunt arcu sit amet, vestibulum elit. Ut dictum ex lacus, sed hendrerit lectus
+          pellentesque sit amet. Maecenas iaculis commodo dolor vitae egestas. Duis congue nisi et enim vehicula
+          iaculis. Vestibulum pellentesque commodo augue eu consectetur. Morbi vestibulum mauris dolor. Proin vel
+          efficitur neque, quis vulputate ante.</p>
+      </div>
+      <div class="column-2" style="padding: 10px;">
+        <!-- Put Profile Picture here -->
+        <img id="profile_pic" class="modal-image" src="images/profile_picture/Clarence_Hoang.jpg">
+      </div>
+    </div>
+    <!-- <div class="item">
+      <div class="artsist_bio">
+        <h1>More Images</h1>
+        <hr>
+      </div>
+      <div class="extra-images">
+        <img class="modal-image" src="../images/sjsu_logo.png">
+        <img class="modal-image" src="../images/sjsu_logo.png">
+      </div>
+    </div> -->
+
+
+    <footer class="buttons">
+      <a href="ben-beary.html"><button id="left"><img src="../images/icons/left_arrow.png"></button></a>
+      <a href="../catalogue_page.html"><button style="height: 100%;">Return To Catalogue</button></a>
+      <a href="dale-de-guzman.html"><button id="right"><img src="../images/icons/right_arrow.png"></button></a>
+    </footer>
+  </div>
+  <script src="../js/ArtistPageFiller.js"></script>
+
+</body>
+
+
+
+</html>

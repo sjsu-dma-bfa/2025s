@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Artist Page - Sejeong Park</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image_/x-icon" href="../images/sjsu_logo.png">
+  <link rel="stylesheet" href="../css/general_css_code.css">
+
+  <link rel="stylesheet" href="../css/artist-page-style.css">
+
+  <!-- Custom Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+    rel="stylesheet">
+  <!-- End of Custom Fonts -->
+
+
+
+</head>
+
+<body>
+
+  <!-- navigation bar --------------------------------------->
+  <div class="navbar">
+    <a class="currentPage, left" href="../index.html">Digital Illusions</a>
+    <a class="right" href="../about_page.html">About</a>
+    <a class="right" href="../catalogue_page.html">Catalogue</a>
+  </div>
+
+  <!-- Modal Component --------------------------------------->
+  <div class="modal" id="imageModal">
+    <span class="close" id="closeModal">&times;</span>
+    <img class="modal-content" id="modalImg" src="">
+  </div>
+
+  <!-- Artist Title & Info Panel ----------------------------->
+  <div class="bg-wrapper">
+    <div class="bg-image"></div>
+    <div class="item" style="background-color: rgba(0, 0, 0, 0.5);">
+      <div class="column">
+        <div class="artist_statement">
+          <h1 id="title">Tiny Paws Big Steps</h1>
+          <hr>
+          <h3 id="name" style="color: white">Created By: <strong>Sejeong Park (she/her)</strong></h3>
+          <div class="buttons">
+            <!-- Add Portfolio Links and Video / game link -->
+            <a target="_blank" href="https://sejeong021213.wixsite.com/sejeongpark"><button> Portfolio </button></a>
+            <!-- <a target="_blank" href="https://fiction-hans.itch.io/whimsical-flavors?secret=F16NgLtUrKKxCD9vcJKv6JYO7oY"><button> Play on Itch.io </button></a> -->
+          </div>
+          <div class="socialIcons" style="margin: 20px 0;">
+            <!-- Add Social Media Links Here -->
+            <a target="_blank" href="https://www.instagram.com/cozi.soop/"><img src="../images/icons/icon-logo-instagram.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="item">
+
+      <div class="artwork">
+        <!-- Main Art Piece (Put Embbed Youtube Link Here) -->
+        <!-- <img id="artwork" class="modal-image" src="../images/sjsu_logo.png"> -->
+        <iframe style="aspect-ratio: 16/9;" src="https://www.youtube.com/embed/rfh6AAbWHJ4" title="Tiny Paws Big Steps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <!-- Only Have this if the Artwork is a game -->
+      <!-- <div class="buttons">
+        <a target="_blank"
+          href="https://fiction-hans.itch.io/whimsical-flavors?secret=F16NgLtUrKKxCD9vcJKv6JYO7oY"><button style="width: 100%; margin: 0px; margin-top: 5px;"> Play on Itch.io </button></a>
+      </div> -->
+    </div>
+
+
+
+    <div class="item">
+      <div class="artsist_bio">
+        <h1>Artist Statement</h1>
+        <hr>
+        <p id="statement"><em>Tiny Paws Big Steps</em> is a 3D animation that portrays the challenges of early adulthood through
+          the lives of three animal characters. Set in a playful yet emotionally grounded world, the story presents
+          relatable moments of growth, burning food in the kitchen, getting stuck in traffic, and managing a healthy
+          life through humorous and heartfelt scenes. The characters embody shared experiences of young adults stepping
+          into independence for the first time. As a young adult myself, I've encountered many unfamiliar situations
+          that pushed me to grow: traveling with friends, driving long distances alone, and learning how to manage tasks
+          like cooking and taxes. I was often scared at first, but these moments became defining parts of my journey.
+          Through this animation, I wanted to express the emotional ups and downs of those experiences and reflect on
+          what it means to try, fail, and grow. The characters are extensions of my emotions and reactions during these
+          years of growth. All modeling and animation were created using Blender, with editing completed in After
+          Effects and Premiere Pro. Using cute, round-shaped animal characters paired with stylized environments
+          supports a visually comforting aesthetic that encourages empathy and connection while acknowledging the
+          difficulty of personal growth.</p>
+        <!-- <button><a >learn more</a></button> -->
+      </div>
+    </div>
+    <div class="item">
+      <div class="column">
+        <h1>Artist Biography</h1>
+        <hr style="width: 100%;">
+        <p id="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec justo et massa interdum
+          ornare in porta purus. Quisque viverra odio at convallis ornare. Sed mattis eu ligula vitae blandit. Cras eget
+          quam facilisis, tincidunt arcu sit amet, vestibulum elit. Ut dictum ex lacus, sed hendrerit lectus
+          pellentesque sit amet. Maecenas iaculis commodo dolor vitae egestas. Duis congue nisi et enim vehicula
+          iaculis. Vestibulum pellentesque commodo augue eu consectetur. Morbi vestibulum mauris dolor. Proin vel
+          efficitur neque, quis vulputate ante.</p>
+      </div>
+      <div class="column-2" style="padding: 10px;">
+        <!-- Put Profile Picture here -->
+        <img id="profile_pic" class="modal-image" src="images/profile_picture/IMG_5561 - Sejeong Park.jpg">
+      </div>
+    </div>
+    <div class="item">
+      <div class="artsist_bio">
+        <h1>More Images</h1>
+        <hr>
+      </div>
+      <div class="extra-images">
+        <img class="modal-image" src="images/extra_images/zoomed - Sejeong Park.jpg">
+        <img class="modal-image" src="images/extra_images/nana1 - Sejeong Park.jpg">
+        <img class="modal-image" src="images/extra_images/nana2 - Sejeong Park.jpg">
+        <img class="modal-image" src="images/extra_images/miro1 - Sejeong Park.jpg">
+        <img class="modal-image" src="images/extra_images/miro2 - Sejeong Park.jpg">
+        <img class="modal-image" src="images/extra_images/sori1 - Sejeong Park.jpg">
+        <img class="modal-image" src="images/extra_images/sori2 - Sejeong Park.jpg">
+        <img class="modal-image" src="images/extra_images/last - Sejeong Park.jpg">
+      </div>
+    </div>
+
+
+    <footer class="buttons">
+      <a href="rini-tran.html"><button id="left"><img src="../images/icons/left_arrow.png"></button></a>
+      <a href="../catalogue_page.html"><button style="height: 100%;">Return To Catalogue</button></a>
+      <a href="seleyna-velasquez.html"><button id="right"><img src="../images/icons/right_arrow.png"></button></a>
+    </footer>
+  </div>
+  <script src="../js/ArtistPageFiller.js"></script>
+
+</body>
+
+
+
+</html>

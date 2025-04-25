@@ -1,0 +1,140 @@
+<html>
+
+<head>
+  <title>Artist Page - Bao Le</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image_/x-icon" href="../images/sjsu_logo.png">
+  <link rel="stylesheet" href="../css/general_css_code.css">
+
+  <link rel="stylesheet" href="../css/artist-page-style.css">
+
+  <!-- Custom Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+    rel="stylesheet">
+  <!-- End of Custom Fonts -->
+
+
+
+</head>
+
+<body>
+
+  <!-- navigation bar --------------------------------------->
+  <div class="navbar">
+    <a class="currentPage, left" href="../index.html">Digital Illusions</a>
+    <a class="right" href="../about_page.html">About</a>
+    <a class="right" href="../catalogue_page.html">Catalogue</a>
+  </div>
+
+  <!-- Modal Component --------------------------------------->
+  <div class="modal" id="imageModal">
+    <span class="close" id="closeModal">&times;</span>
+    <img class="modal-content" id="modalImg" src="">
+  </div>
+
+  <!-- Artist Title & Info Panel ----------------------------->
+  <div class="bg-wrapper">
+    <div class="bg-image"></div>
+    <div class="item" style="background-color: rgba(0, 0, 0, 0.5);">
+      <div class="column">
+        <div class="artist_statement">
+          <h1 id="title">Liminal Shift</h1>
+          <hr>
+          <h3 id="name" style="color: white">Created By: <strong>Bao Le (he/him)</strong></h3>
+          <div class="buttons">
+            <!-- Add Portfolio Links and Video / game link -->
+            <a target="_blank" href="https://www.artstation.com/chibaole"><button> Portfolio </button></a>
+            <a target="_blank" href="https://novasolf.itch.io/liminal-trial"><button> Play on Itch.io </button></a>
+          </div>
+          <div class="socialIcons" style="margin: 20px 0;">
+            <!-- Add Social Media Links Here -->
+            <a target="_blank" href="https://novasolf.itch.io/"><img src="../images/icons/icon-logo-itchio.png"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/chibaole/"><img src="../images/icons/icon-logo-linkedin.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="item">
+
+      <div class="artwork">
+        <!-- Main Art Piece (Put Embbed Youtube Link Here) -->
+        <img id="artwork" class="modal-image" src="images/Main_images/liminalTrailLogo-1x1 - Bao Le.png">
+      </div>
+      <!-- Only Have this if the Artwork is a game -->
+      <div class="buttons"><a target="_blank"
+          href="https://novasolf.itch.io/liminal-trial"><button style="width: 100%; margin: 0px; margin-top: 5px;"> Play on Itch.io </button></a>
+      </div>
+    </div>
+
+
+
+    <div class="item">
+      <div class="artsist_bio">
+        <h1>Artist Statement</h1>
+        <hr>
+        <p id="statement">Liminal Shift is a psychological horror game that focuses on perception, memory, and
+          uncertainty. I was inspired by analog horror and liminal spaces, which made me design the game to be focused
+          on recognizing subtle changes rather than reacting to obvious horror elements as the player is challenged with
+          determining if the environment around them is either normal or abnormal. This project marked a major shift in
+          my creative journey as I worked primarily as the 3D artist and lead designer for the past games I worked on
+          with others. I took this opportunity to push beyond my comfort zone and handle all aspects of game development
+          ranging from level design to coding the game mechanics. In other words, I viewed this game as an opportunity
+          to prove to myself that I could build a complete experience rather than just contributing to aspects of a
+          game. Reflecting back on this project, I would say the most challenging aspect is learning the coding and
+          gameplay design, specifically when it came to balancing atmospheric tension and interactivity requiring a
+          different creative approach in terms of working with something interactive rather than something purely
+          visual. Another aspect that was a learning experience was developing the randomized level system as it forced
+          me to think about gameplay logic rather than just visuals. Overall, this project reinforced my passion for
+          interactive storytelling.
+          I wish for you to take the experience of playing Liminal Shift as more than just a horror game, but rather a
+          pillar of growth of myself as a creator.
+        </p>
+        <!-- <button><a >learn more</a></button> -->
+      </div>
+    </div>
+    <div class="item">
+      <div class="column">
+        <h1>Artist Biography</h1>
+        <hr style="width: 100%;">
+        <p id="bio">Bao Le is a 21-year-old Digital Media Arts student at San Jose State University. He was born in Bac Lieu, Vietnam, and raised in San Jose, California. Growing up in Silicon Valley, he developed a passion for technology early on. Now specializing in 3D environment art, he aims to contribute to game development or virtual production by creating immersive digital worlds.
+        </p>
+      </div>
+      <div class="column-2" style="padding: 10px;">
+        <!-- Put Profile Picture here -->
+        <img id="profile_pic" class="modal-image" src="../images/sjsu_logo.png">
+      </div>
+    </div>
+    <div class="item">
+      <div class="artsist_bio">
+        <h1>More Images</h1>
+        <hr>
+      </div>
+      <div class="extra-images">
+        <img class="modal-image" src="images/extra_images/screenshot1 - Bao Le.png">
+        <img class="modal-image" src="images/extra_images/screenshot2 - Bao Le.png">
+        <img class="modal-image" src="images/extra_images/screenshot3 - Bao Le.png">
+        <img class="modal-image" src="images/Main_images/screenshot4 - Bao Le.png">
+      </div>
+    </div>
+
+
+    <footer class="buttons">
+      <a href="angelique-fernandez.html"><button id="left"><img src="../images/icons/left_arrow.png"></button></a>
+      <a href="../catalogue_page.html"><button style="height: 100%;">Return To Catalogue</button></a>
+      <a href="ben-beary.html"><button id="right"><img src="../images/icons/right_arrow.png"></button></a>
+    </footer>
+  </div>
+  <script src="../js/ArtistPageFiller.js"></script>
+
+</body>
+
+
+
+</html>

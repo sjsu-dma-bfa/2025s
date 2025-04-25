@@ -1,0 +1,132 @@
+<html>
+
+<head>
+  <title>Artist Page - Emma Morales</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image_/x-icon" href="../images/sjsu_logo.png">
+  <link rel="stylesheet" href="../css/general_css_code.css">
+
+  <link rel="stylesheet" href="../css/artist-page-style.css">
+
+  <!-- Custom Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+    rel="stylesheet">
+  <!-- End of Custom Fonts -->
+
+
+
+</head>
+
+<body>
+
+  <!-- navigation bar --------------------------------------->
+  <div class="navbar">
+    <a class="currentPage, left" href="../index.html">Digital Illusions</a>
+    <a class="right" href="../about_page.html">About</a>
+    <a class="right" href="../catalogue_page.html">Catalogue</a>
+  </div>
+
+  <!-- Modal Component --------------------------------------->
+  <div class="modal" id="imageModal">
+    <span class="close" id="closeModal">&times;</span>
+    <img class="modal-content" id="modalImg" src="">
+  </div>
+
+  <!-- Artist Title & Info Panel ----------------------------->
+  <div class="bg-wrapper">
+    <div class="bg-image"></div>
+    <div class="item" style="background-color: rgba(0, 0, 0, 0.5);">
+      <div class="column">
+        <div class="artist_statement">
+          <h1 id="title">The Astronaut and the Whale</h1>
+          <hr>
+          <h3 id="name" style="color: white">Created By: <strong>Emma Morales (she/her)</strong></h3>
+          <div class="buttons">
+            <!-- Add Portfolio Links and Video / game link -->
+            <a target="_blank" href="https://emmamorales.myportfolio.com"><button> Portfolio </button></a>
+            <!-- <a target="_blank" href="https://fiction-hans.itch.io/whimsical-flavors?secret=F16NgLtUrKKxCD9vcJKv6JYO7oY"><button> Play on Itch.io </button></a> -->
+          </div>
+          <!-- <div class="socialIcons" style="margin: 20px 0;"> -->
+            <!-- Add Social Media Links Here -->
+            <!-- <a target="_blank" href="https://bsky.app/profile/annviatrix.bsky.social/post/3llcdb2rkn22l"><img src="../images/icons/icon-logo-bluesky.png"></a> -->
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="item">
+
+      <div class="artwork">
+        <!-- Main Art Piece (Put Embbed Youtube Link Here) -->
+        <img id="artwork" class="modal-image" src="images/Main_images/IMG_CEFBCFC80D5A-1 - Emma Morales.jpeg">
+      </div>
+      <!-- Only Have this if the Artwork is a game -->
+      <!-- <div class="buttons">
+        <a target="_blank"
+          href="https://fiction-hans.itch.io/whimsical-flavors?secret=F16NgLtUrKKxCD9vcJKv6JYO7oY"><button style="width: 100%; margin: 0px; margin-top: 5px;"> Play on Itch.io </button></a>
+      </div> -->
+    </div>
+
+
+
+    <div class="item">
+      <div class="artsist_bio">
+        <h1>Artist Statement</h1>
+        <hr>
+        <p id="statement">A 2D animated video of a short story about an astronaut and a whale, created with Procreate
+          and Procreate Dreams. I relate to the whale in the story in the sense that sometimes I feel like I don't fit
+          in where I “belong”. As a “white-washed” Mexican-American, there are complexities to my identity within my
+          community, I sometimes feel disconnected from my roots. In the art community, I often feel the symptoms of
+          imposter syndrome, making me question whether or not I deserve to be here. But just as the whale finds joy in
+          his adventure with the astronaut, I have discovered my own sense of belonging through new friendships and
+          creative exploration. I want to reflect the feeling of stepping outside of familiarity, diving into unknown
+          territory, and finding joy in the process of discovery.</p>
+        <!-- <button><a >learn more</a></button> -->
+      </div>
+    </div>
+    <div class="item">
+      <div class="column">
+        <h1>Artist Biography</h1>
+        <hr style="width: 100%;">
+        <p id="bio">Emma Morales is a Mexican-American artist from Farmersville, California, currently pursuing a Bachelor of Fine Arts in Digital Media Art at San José State University. 
+          <br><br>Growing up, her childhood dream was to become an artist. But after years of sketching, painting and crafting, she realized that her worked better with a mouse and screen rather than a paintbrush and canvas.
+          <br><br>After discovering this new medium she quickly became passionate about working on Digital Illustrations , Video Editing, and Photoshop. Although she is still in the process of building a better portfolio of work, she is passionate about creating immersive scenes through video and web designs. Emma hopes to continue expanding on this by incorporating animation in future works. In doing so, she hopes to captivate audiences with feelings of awe and wonder. </p>
+      </div>
+      <div class="column-2" style="padding: 10px;">
+        <!-- Put Profile Picture here -->
+        <img id="profile_pic" class="modal-image" src="images/profile_picture/Screenshot_20250423_214802_Photos - Emma Morales.jpg">
+      </div>
+    </div>
+    <div class="item">
+      <div class="artsist_bio">
+        <h1>More Images</h1>
+        <hr>
+      </div>
+      <div class="extra-images">
+        <img class="modal-image" src="images/extra_images/IMG_0690 - Emma Morales.PNG">
+        <img class="modal-image" src="images/extra_images/IMG_0692 - Emma Morales.PNG">
+        <img class="modal-image" src="images/extra_images/IMG_0693 - Emma Morales.PNG">
+        <img class="modal-image" src="images/extra_images/IMG_0694 - Emma Morales.PNG">
+      </div>
+    </div>
+
+
+    <footer class="buttons">
+      <a href="dietrich-steinberg.html"><button id="left"><img src="../images/icons/left_arrow.png"></button></a>
+      <a href="../catalogue_page.html"><button style="height: 100%;">Return To Catalogue</button></a>
+      <a href="hannah-fu.html"><button id="right"><img src="../images/icons/right_arrow.png"></button></a>
+    </footer>
+  </div>
+  <script src="../js/ArtistPageFiller.js"></script>
+
+</body>
+
+
+
+</html>

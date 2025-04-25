@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Artist Page - Ben Beary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image_/x-icon" href="../images/sjsu_logo.png">
+  <link rel="stylesheet" href="../css/general_css_code.css">
+
+  <link rel="stylesheet" href="../css/artist-page-style.css">
+
+  <!-- Custom Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+    rel="stylesheet">
+  <!-- End of Custom Fonts -->
+
+
+
+</head>
+
+<body>
+
+  <!-- navigation bar --------------------------------------->
+  <div class="navbar">
+    <a class="currentPage, left" href="../index.html">Digital Illusions</a>
+    <a class="right" href="../about_page.html">About</a>
+    <a class="right" href="../catalogue_page.html">Catalogue</a>
+  </div>
+
+  <!-- Modal Component --------------------------------------->
+  <div class="modal" id="imageModal">
+    <span class="close" id="closeModal">&times;</span>
+    <img class="modal-content" id="modalImg" src="">
+  </div>
+
+  <!-- Artist Title & Info Panel ----------------------------->
+  <div class="bg-wrapper">
+    <div class="bg-image"></div>
+    <div class="item" style="background-color: rgba(0, 0, 0, 0.5);">
+      <div class="column">
+        <div class="artist_statement">
+          <h1 id="title">Spirit Outbreak</h1>
+          <hr>
+          <h3 id="name" style="color: white">Created By: <strong>Ben Beary</strong></h3>
+          <div class="buttons">
+            <!-- Add Portfolio Links and Video / game link -->
+            <a target="_blank" href="https://benbeary.github.io/art-109-sjsu/portfolio-site/index.html"><button> Portfolio </button></a>
+            <a target="_blank" href="https://benbeary.itch.io/spirit-outbreak"><button> Play on Itch.io </button></a>
+          </div>
+          <!-- <div class="socialIcons" style="margin: 20px 0;"> -->
+            <!-- Add Social Media Links Here -->
+            <!-- <a target="_blank" href="https://bsky.app/profile/annviatrix.bsky.social/post/3llcdb2rkn22l"><img
+                src="../images/icons/icon-logo-bluesky.png"></a> -->
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="item">
+
+      <div class="artwork">
+        <!-- Main Art Piece (Put Embbed Youtube Link Here) -->
+        <img id="artwork" class="modal-image" src="images/Main_images/TitleBanner_21x9_SpiritBreakout - Ben Beary.jpg">
+      </div>
+      <!-- Only Have this if the Artwork is a game -->
+      <div class="buttons">
+        <a target="_blank"
+          href="https://benbeary.itch.io/spirit-outbreak"><button style="width: 100%; margin: 0px; margin-top: 5px;"> Play on Itch.io </button></a>
+      </div>
+    </div>
+
+
+
+    <div class="item">
+      <div class="artsist_bio">
+        <h1>Artist Statement</h1>
+        <hr>
+        <p id="statement">Spirit Outbreak is a 2D isometric trap defense game, with the whole point of the game being to
+          stop incoming hordes of ghosts from reaching their target by all means necessary. It may seem easy at first to
+          predict the ghosts' movement patterns, but as the waves progress, the map begins to change with new entrances
+          and exits starting to appear, causing the player to adapt their trap layout to support the new map. The end
+          goal of this project is to hopefully leave the player happy with their success or desperate to beat the level
+          next time. The game was created in Unity and uses a modular design for development. Every building has at
+          least one main data component and the enemies all share their own data component as well. Everything built in
+          the game was built with modularity in mind so creation of new items could be streamlined in. The idea behind
+          the map shape shifting over time originally began as having to deal with multiple different maps at the same
+          time, with new maps being added to the stack. The old idea was deemed too challenging for players to engage
+          with and was scrapped for the current version that is in place now. The pathfinding for enemies uses the A*
+          Pathfinding solution in which they will always try to find the quickest path possible, even if it means going
+          through some player-made walls. The idea for the enemies being ghosts actually arrived through playtesting
+          during the development cycle, where the placeholder art for the enemies was being compared to ghosts, and the
+          comparison made it all the way into the main plot for the game.</p>
+        <!-- <button><a >learn more</a></button> -->
+      </div>
+    </div>
+    <div class="item">
+      <div class="column">
+        <h1>Artist Biography</h1>
+        <hr style="width: 100%;">
+        <p id="bio">Ben Beary is a game designer based in California. Their main objective is to create fun and engaging video games for others to play. One of their main influences that brought them to this path was other video games they have played in their life. Ben has made over eight different small games while studying at San Jose State University for three years. When asked about how he likes to develop games, his response was that he likes to create games based on what they have played recently and take his time as it’s like solving a puzzle for them.</p>
+      </div>
+      <div class="column-2" style="padding: 10px;">
+        <!-- Put Profile Picture here -->
+        <img id="profile_pic" class="modal-image" src="images/profile_picture/profile - Ben Beary.jpg">
+      </div>
+    </div>
+    <div class="item">
+      <div class="artsist_bio">
+        <h1>More Images</h1>
+        <hr>
+      </div>
+      <div class="extra-images">
+        <img class="modal-image" src="images/extra_images/extra1 - Ben Beary.png">
+        <img class="modal-image" src="images/extra_images/extra2 - Ben Beary.png">
+        <img class="modal-image" src="images/extra_images/extra3 - Ben Beary.png">
+        <img class="modal-image" src="images/extra_images/extra4 - Ben Beary.png">
+      </div>
+    </div>
+
+
+    <footer class="buttons">
+      <a href="bao-le.html"><button id="left"><img src="../images/icons/left_arrow.png"></button></a>
+      <a href="../catalogue_page.html"><button style="height: 100%;">Return To Catalogue</button></a>
+      <a href="clarence-hoang.html"><button id="right"><img src="../images/icons/right_arrow.png"></button></a>
+    </footer>
+  </div>
+  <script src="../js/ArtistPageFiller.js"></script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,131 @@
+<html>
+
+<head>
+  <title>Artist Page - Alisha Karmacharya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image_/x-icon" href="../images/sjsu_logo.png">
+  <link rel="stylesheet" href="../css/general_css_code.css">
+
+  <link rel="stylesheet" href="../css/artist-page-style.css">
+
+  <!-- Custom Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+    rel="stylesheet">
+  <!-- End of Custom Fonts -->
+
+
+
+</head>
+
+<body>
+
+  <!-- navigation bar --------------------------------------->
+  <div class="navbar">
+    <a class="currentPage, left" href="../index.html">Digital Illusions</a>
+    <a class="right" href="../about_page.html">About</a>
+    <a class="right" href="../catalogue_page.html">Catalogue</a>
+  </div>
+
+  <!-- Modal Component --------------------------------------->
+  <div class="modal" id="imageModal">
+    <span class="close" id="closeModal">&times;</span>
+    <img class="modal-content" id="modalImg" src="">
+  </div>
+
+  <!-- Artist Title & Info Panel ----------------------------->
+  <div class="bg-wrapper">
+    <div class="bg-image"></div>
+    <div class="item" style="background-color: rgba(0, 0, 0, 0.5);">
+      <div class="column">
+        <div class="artist_statement">
+          <h1 id="title">Reflection of Vulnerability, 2025</h1>
+          <hr>
+          <h3 id="name" style="color: white">Created By: <strong>Alisha Karmacharya (she/her)</strong></h3>
+          <!-- <div class="buttons"> -->
+            <!-- Add Portfolio Links and Video / game link -->
+            <!-- <a target="_blank" href="https://fictionalspace.github.io/Portfolio/index.html"><button> Portfolio </button></a> -->
+            <!-- <a target="_blank" href="https://fiction-hans.itch.io/whimsical-flavors?secret=F16NgLtUrKKxCD9vcJKv6JYO7oY"><button> Play on Itch.io </button></a> -->
+          <!-- </div> -->
+          <!-- <div class="socialIcons" style="margin: 20px 0;"> -->
+            <!-- Add Social Media Links Here -->
+            <!-- <a target="_blank" href="https://bsky.app/profile/annviatrix.bsky.social/post/3llcdb2rkn22l"><img src="../images/icons/icon-logo-bluesky.png"></a> -->
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="item">
+
+      <div class="artwork">
+        <!-- Main Art Piece (Put Embbed Youtube Link Here) -->
+        <img id="artwork" class="modal-image" src="images/Main_images/Untitled_Artwork 3 - Alisha Karmacharya.jpg">
+      </div>
+      <!-- Only Have this if the Artwork is a game -->
+      <!-- <div class="buttons">
+        <a target="_blank"
+          href="https://fiction-hans.itch.io/whimsical-flavors?secret=F16NgLtUrKKxCD9vcJKv6JYO7oY"><button style="width: 100%; margin: 0px; margin-top: 5px;"> Play on Itch.io </button></a>
+      </div> -->
+    </div>
+
+
+
+    <div class="item">
+      <div class="artsist_bio">
+        <h1>Artist Statement</h1>
+        <hr>
+        <p id="statement">This artwork explores how behaviors often labeled as “bad” are sometimes misunderstood
+          expressions of emotional pain. Inspired by The School of Life's video on the Seven Deadly Sins, I began
+          thinking about how many of our actions—those we're ashamed of or judged for—can actually be forms of coping.
+          Rather than seeing them as moral failings, I see them as signals of unmet needs, unhealed wounds, or silent
+          struggles. When people are overwhelmed by trauma, depression, or loneliness, they often turn to behaviors that
+          offer a sense of control, distraction, or temporary relief. These actions might seem irrational or
+          self-destructive from the outside, but they often carry deeper emotional meaning. Each piece represents a
+          transformation—from shame into understanding. These emotions often exist under the surface, masked by actions
+          that are easy to criticize but harder to understand. Ultimately, this piece is about reclaiming compassion for
+          the parts of ourselves we're taught to hide. It's a reminder that healing doesn't always look graceful, and
+          that behind every behavior we're quick to judge, there may be a story that deserves to be heard.</p>
+        <!-- <button><a >learn more</a></button> -->
+      </div>
+    </div>
+    <div class="item">
+      <div class="column">
+        <h1>Artist Biography</h1>
+        <hr style="width: 100%;">
+        <p id="bio">Alisha Karmacharya is a digital artist based in the Bay Area, born in Nepal in 2001 and raised in Berkeley. Through her vibrant works, Alisha explores themes of self-expression, healing, and societal pressures, crafting a visual narrative that resonates with the complexities of the human experience. Her art seamlessly blends digital mediums, motion graphics, and graphic design, creating a unique dialogue between realism and abstraction through storytelling. Alisha's bright and colorful palette invites viewers into a world where emotion and insight converge, encouraging deep engagement with her symbolic creations. By reflecting on both the joys and challenges of her personal journey, Alisha offers a fresh perspective on contemporary issues, revealing the intricacies of identity and connection in a visually striking language. </p>
+      </div>
+      <div class="column-2" style="padding: 10px;">
+        <!-- Put Profile Picture here -->
+        <img id="profile_pic" class="modal-image" src="../images/sjsu_logo.png">
+      </div>
+    </div>
+    <!-- <div class="item">
+      <div class="artsist_bio">
+        <h1>More Images</h1>
+        <hr>
+      </div>
+      <div class="extra-images">
+        <img class="modal-image" src="../images/sjsu_logo.png">
+        <img class="modal-image" src="../images/sjsu_logo.png">
+      </div>
+    </div> -->
+
+
+    <footer class="buttons">
+      <a href="tina-nguyen.html"><button id="left"><img src="../images/icons/left_arrow.png"></button></a>
+      <a href="../catalogue_page.html"><button style="height: 100%;">Return To Catalogue</button></a>
+      <a href="andre-zambrana.html"><button id="right"><img src="../images/icons/right_arrow.png"></button></a>
+    </footer>
+  </div>
+  <script src="../js/ArtistPageFiller.js"></script>
+
+</body>
+
+
+
+</html>
