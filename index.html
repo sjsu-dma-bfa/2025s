@@ -1,58 +1,82 @@
 <html>
-
 <head>
-    <title>Digital Illusions: Coming Soon!</title>
+    <title>Digital Illusions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image_/x-icon" href="images/sjsu_logo.png">
     <link rel="stylesheet" href="css/general_css_code.css">
-    <link rel="stylesheet" href="css/comingSoon_style.css">
+    <link rel="stylesheet" href="css/home_page_code.css">    
 
-    <!-- Custom Font -->
+    <!-- Custom Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <!-- End of Custom Fonts -->
+     
+<style>
+  button {
+    /* display: block; */
+    max-height: 50px;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: none;
+    margin: 5px;
+    background-color: #7D36B3;
+    font-weight: 800;
+}
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
-    <!-- Custom Font End -->
+buttons a {
+    color: white;
+}
 
+button:hover{
+    background-color: #00C0E6;
+}
+</style>
 </head>
-
 <body>
-    <!-- bg-image is in css/comingSoon_style.css -->
-    <div class="bg-image"></div>
-    <img src="images/icons/down_arrow.png" alt="image" class="arrow-image">
+<!-- navigation bar ----------------------------------->
+<div class="navbar" style="min-height: 10vh;">
+  <img class="nav_logo, left" src="images/light-mascot-1.png" style="width: 40px; padding: 10px 0px 10px 16px;">
+    <a class="currentPage, left" href="index.html">Digital Illusions</a>
+    <a class="right" href="about_page.html">About</a>
+    <a class="right" href="catalogue_page.html">Catalogue</a>
+</div> <!-- navigation bar end ----------------------------------->
 
-    <div class="bg-text">
-        <!-- <h1 class="fancy-text">Digital Illusions</h1> -->
-         <img src="images/Title-Lockup.png" style="width: 80vw; height: auto;">
-        <h2>Coming Soon...</h2>
-        <h2 id="timer"></h2>
-        <script src="js/countDown.js"></script>
-    </div>
 
-    <div class="info-section">
-        <strong>
-            <h2>Hammer Theater</h2>
-        </strong>
-        <p>April 26, 2025 from 6 - 9pm PST</p>
+<a href="catalogue_page.html">
+  <div class="container">
+    <img class="mainGif" src="images/DIGITAL-ILLUSIONS10-web.gif" loop=infinite />
+  </div>
+  <img class="imageAnimate" src="images/Title-Lockup.png">
+</a>
 
-        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=2025+DMA+BFA+Exhibition&dates=20250426T180000/20250426T210000&details=Come+and+experience+Spring+2025+Digital+Media+Arts+group+exhibition&location=101+Paseo+de+San+Antonio,+San+Jose,+CA+95113&ctz=America/Los+Angelas"
-            target="_blank">
-            <img src="images/icons/googleCalender.png" style="height: 24px; width: auto;">
-             Mark event in Google Calender
-        </a>
 
-        <p2><br><br>101 Paseo de San Antonio, San Jose, CA 95113</p2>
-        <div class="socialIcons">
-            <a target="_blank" href="https://www.instagram.com/digitalillusions_25?igsh=NTc4MTIwNjQ2YQ=="><img src="images/icons/icon-logo-instagram.png"></a>
-            <a target="_blank" href="https://www.tiktok.com/@digitalillusions_25?_t=ZM-8v0hME5ixj3&_r=1"><img src="images/icons/icon-logo-TikTok.png"></a>
 
-        </div>
-    </div>
+<!-- <img style="width: 100%; height:auto;" src="images/BackgroundImages/Large_Background.jpg"> -->
+<!-- hero image end -->
+
+<!-- News Section ---------------------------------->
+
+<!-- Just use the nav bar -->
+
+<!-- <div class="news_section" style="text-align: center;">
+  <h1 style="margin-top: 50px;">Coming soon to the Hammer theater</h1>
+  <p style="margin-top: 20px;" >April 26, 6-9pm</p>
+ </div>
+<div class="artworks_section" style="width: 80%; margin-left: 10%;">
+  <h1>Our Exhibition</h1>
+  <p>Digital Illusions is a student and staff lead exhibition that showcases student pieces that challenge people's perception of art and technology. This showcases art pieces that challenge perceptions and blurs reality. This exhibition invites people to see the power of digital art and how vast and evolving the world of digital art.</p>
+  <a style="float: right;" href="catalogue_page.html"><button>Explore</button></a>
+</div>
+<br>
+<div class="about_section" style="width: 80%; margin-left: 10%;">
+  <h1>About Us</h1>
+  <p>description</p>
+  <a href="about_page.html" style="float: right;"><button class="button">learn more</button></a>
+</div> -->
 
 </body>
-
 </html>
