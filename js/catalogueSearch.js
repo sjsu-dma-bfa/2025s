@@ -25,3 +25,33 @@ tagButtons.forEach(tagButton => {
         filterCatalog(tag.toLowerCase());  // Filter based on the clicked tag
     });
 });
+
+
+
+
+// Animated Logo at the top
+// Logo only appears after the viewer has scrolled down and then back up
+
+const img = document.getElementById('logo');
+let hasScrolledDown = false;
+let hasAnimated = false;
+
+// Helper to check if element is in viewport
+function isInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+}
+
+window.addEventListener('scroll', function() {
+  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (currentScroll > 100) { // arbitrary scroll down detection
+    hasScrolledDown = true;
+  }
+
+  if (hasScrolledDown && !hasAnimated && isInViewport(img)) {
+    img.classList.add('fade-in');
+    hasAnimated = true;
+  }
+});
+

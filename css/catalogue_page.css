@@ -1,3 +1,10 @@
+body{
+  background-image: url("../images/DigitalIllusions-Final-Background.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top left;
+}
+
 /* hero image -------full page-----*/
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
@@ -81,8 +88,56 @@ form{
   background-color: rgba(138, 43, 226,.5);
 }
 
+
+
+
+/* ---------------------------------------------------
+---- Animated Logo ----------------------------------- 
+------------------------------------------------------ */
+.animateLogo {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0;
+  transition: none;
+}
+
+.fade-in {
+  width: 100%;
+  opacity: 0;
+  mask-image: linear-gradient(to right, black 0%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 0%, transparent 100%);
+  animation: fadeReveal 2s forwards, removeMask 0.5s 1.25s forwards;
+}
+
+/* First animation: Reveal */
+@keyframes fadeReveal {
+  0% {
+    opacity: 0;
+    mask-size: 0% 100%;
+    -webkit-mask-size: 0% 100%;
+  }
+  100% {
+    opacity: 1;
+    mask-size: 100% 100%;
+    -webkit-mask-size: 100% 100%;
+  }
+}
+
+/* Second animation: Remove mask after 2s */
+@keyframes removeMask {
+  to {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+}
+
+
+
 /* fuck your old float box no padding ass css layout */
 .catalogue {
+
+
   width: 80vw;
   margin: 0 auto;
   display: flex;

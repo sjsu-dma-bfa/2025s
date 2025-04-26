@@ -75,9 +75,12 @@
 
   /* Modal content (the image) */
   .modal-content {
-    max-width: 90%;
-    max-height: 90%;
-    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   }
 
   /* Close button */
